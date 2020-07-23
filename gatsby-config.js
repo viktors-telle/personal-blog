@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     // edit below
-    title: `Viktors Telle personal website and blog`,
+    title: `Viktors Telle blog`,
     author: `Viktors Telle`,
     description: `Viktors Telle personal website and blog. Viktors is system architect and full-stack developer focusing on developing application using .NET Core and SPA frameworks like React and Angular.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
