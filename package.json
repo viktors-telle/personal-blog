@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-personal-starter-blog",
+  "name": "personal-website-and-blob",
   "private": true,
-  "description": "A personal blog starter for a blog powered by Netlify CMS, based on the default blog starter",
+  "description": "Viktors Telle personal website and blog.",
   "version": "1.0.0",
   "author": "Thomas Wang <thomas@wang.sh>",
   "bugs": {
