@@ -14,11 +14,7 @@ class Blog extends React.Component {
     const posts = data.allMdx.edges
 
     return (
-      <Layout
-        location={this.props.location}
-        title={siteTitle}
-        social={data.site.siteMetadata.social}
-      >
+      <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
         <Bio />
         <div style={{ margin: "20px 0 40px" }}>
@@ -63,12 +59,6 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-        social {
-          twitter
-          linkedIn
-          medium
-          github
-        }
       }
     }
     allMdx(sort: { fields: [frontmatter___date], order: DESC }) {

@@ -8,14 +8,9 @@ import Button from "../components/button"
 class IndexPage extends React.Component {
   render() {
     const siteTitle = "My personal website"
-    const { data } = this.props
 
     return (
-      <Layout
-        location={this.props.location}
-        title={siteTitle}
-        social={data.site.siteMetadata.social}
-      >
+      <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title="Home"
           keywords={[`blog`, `development`, `javascript`, `react`]}
@@ -42,12 +37,6 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-        social {
-          twitter
-          linkedIn
-          medium
-          github
-        }
       }
     }
   }

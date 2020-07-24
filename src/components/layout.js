@@ -1,12 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-
+import Footer from "./footer"
 import { rhythm, scale } from "../utils/typography"
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children, social } = this.props
+    const { location, title, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
     const blogPath = `${__PATH_PREFIX__}/blog/`
     let header
@@ -66,39 +66,7 @@ class Layout extends React.Component {
           <header>{header}</header>
           <main>{children}</main>
         </div>
-        <Footer>
-          <a
-            href={`https://twitter.com/${social.twitter}`}
-            target="_blank"
-            rel="noreferrer"
-          >
-            Twitter
-          </a>
-          &nbsp;|&nbsp;
-          <a
-            href={`https://linkedin.com/in/${social.linkedIn}`}
-            target="_blank"
-            rel="noreferrer"
-          >
-            LinkedIn
-          </a>
-          &nbsp;|&nbsp;
-          <a
-            href={`https://medium.com/@${social.medium}`}
-            target="_blank"
-            rel="noreferrer"
-          >
-            Medium
-          </a>
-          &nbsp;|&nbsp;
-          <a
-            href={`https://github.com/${social.github}`}
-            target="_blank"
-            rel="noreferrer"
-          >
-            GitHub
-          </a>
-        </Footer>
+        <Footer />
       </Wrapper>
     )
   }
@@ -106,11 +74,6 @@ class Layout extends React.Component {
 
 const Wrapper = styled.div`
   min-height: 100vh;
-`
-
-const Footer = styled.footer`
-  text-align: center;
-  margin: 24px;
 `
 
 export default Layout
