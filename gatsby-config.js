@@ -4,9 +4,12 @@ module.exports = {
     title: `Viktors Telle blog`,
     author: `Viktors Telle`,
     description: `Viktors Telle personal website and blog. Viktors is system architect and full-stack developer focusing on developing application using .NET Core and SPA frameworks like React and Angular.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://viktorstelle.com/`,
     social: {
       twitter: `ViktorsTelle`,
+      linkedIn: `viktors-telle`,
+      medium: `viktors.telle`,
+      github: `viktors-telle`,
     },
   },
   plugins: [
@@ -16,6 +19,12 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+      options: {
+        siteUrl: `https://viktorstelle.com`,
+      },
+    },
     `gatsby-plugin-feed-mdx`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -85,13 +94,6 @@ module.exports = {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography`,
-      },
-    },
-    `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
-      options: {
-        siteUrl: `https://www.viktorstelle.com`,
       },
     },
   ],

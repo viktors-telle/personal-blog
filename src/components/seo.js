@@ -89,6 +89,7 @@ SEO.defaultProps = {
   meta: [],
   keywords: [],
   description: ``,
+  canonical: ``,
 }
 
 SEO.propTypes = {
