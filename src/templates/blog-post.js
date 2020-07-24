@@ -14,7 +14,11 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pageContext
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout
+        location={this.props.location}
+        title={siteTitle}
+        social={this.props.data.site.siteMetadata.social}
+      >
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
@@ -76,6 +80,12 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         author
+        social {
+          twitter
+          linkedIn
+          medium
+          github
+        }
       }
     }
     mdx(fields: { slug: { eq: $slug } }) {
