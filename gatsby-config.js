@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     // edit below
-    title: `Viktors Telle blog`,
+    title: `Viktors Telle website`,
     author: `Viktors Telle`,
     description: `Viktors Telle personal website and blog. Viktors is system architect and full-stack developer with 12+ years of experience. My focus is primarily on developing applications using .NET Core and SPA frameworks like React and Angular. I am also experienced in setting up CI/CD pipelines in TeamCity, Octopus Deploy, and Azure
     DevOps.`,
