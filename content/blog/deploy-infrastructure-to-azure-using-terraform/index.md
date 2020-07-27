@@ -1,8 +1,7 @@
 ---
 title: Deploy your infrastructure to Azure using Terraform
 description:
-  Terraform is a great tool to describe your cloud infrastructure in the code (IaC) in a declarative way.
-  The main benefit of using this approach is that you will be able to reproduce your infrastructure easily if something goes wrong. In this article, I am going to describe my own experience with Terraform while building infrastructure in Azure.
+ I will share my experience of migrating from ARM to Terraform, how to organize project structure, and the pros and cons of using Terraform.
 date: '2020-03-04T20:48:34.226Z'
 slug: /@viktors.telle/deploy-infrastructure-to-azure-using-terraform-b55cbab13929
 keywords: ["Terraform", "Azure", "Infrastructure As Code", "DevOps"]

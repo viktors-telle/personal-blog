@@ -1,3 +1,7 @@
 ul > li {
   margin-left: 30px;
 }
+
+.gatsby-resp-image-figcaption {
+  text-align: center;
+}
