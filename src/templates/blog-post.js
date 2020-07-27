@@ -17,6 +17,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
         canonical={post.frontmatter.canonical}
+        keywords={post.frontmatter.keywords}
       />
       <article>
         <header>
@@ -97,6 +98,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         canonical
+        keywords
       }
     }
   }

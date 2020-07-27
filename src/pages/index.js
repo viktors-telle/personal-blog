@@ -14,12 +14,13 @@ class IndexPage extends React.Component {
         <SEO
           title="Home"
           keywords={[
-            `blog`,
-            `software-development`,
-            `c#`,
-            `.net`,
-            `devops`,
-            `react`,
+            `Blog`,
+            `Software Development`,
+            `C#`,
+            `.NET`,
+            `DevOps`,
+            `React`,
+            `Clean Code`,
           ]}
         />
         <h1>
@@ -31,21 +32,17 @@ class IndexPage extends React.Component {
         <p>Welcome to my site.</p>
         <p>
           My name is Viktors Telle, and I am a system architect and full-stack
-          developer with 12+ years of experience.
+          developer with 12+ years of experience. I have worked at a variety of
+          companies ranging from small startups to enterprise companies.
         </p>
         <p>
           My focus is primarily on developing applications using .NET Core and
-          SPA frameworks like React and Angular. I am also experienced in
-          setting up CI/CD pipelines in TeamCity, Octopus Deploy, and Azure
-          DevOps.
+          SPA frameworks like React and Angular. I have experience in creating
+          up CI/CD pipelines in TeamCity, Octopus Deploy, and Azure DevOps. I
+          have experience in coaching and mentoring other developers for the
+          last five years.
         </p>
-        <p>
-          I have coached and mentored other developers for the last 5 years.
-        </p>
-        <p>
-          I also occasionally write about my personal work experience in my
-          blog.
-        </p>
+        <p>Occasionally I share my personal work experience in my blog.</p>
         <Link to="/blog/">
           <Button marginTop="35px">Go to Blog</Button>
         </Link>
