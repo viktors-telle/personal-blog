@@ -5,7 +5,7 @@ description:
   The main benefit of using this approach is that you will be able to reproduce your infrastructure easily if something goes wrong. In this article, I am going to describe my own experience with Terraform while building infrastructure in Azure.
 date: '2020-03-04T20:48:34.226Z'
 slug: /@viktors.telle/deploy-infrastructure-to-azure-using-terraform-b55cbab13929
-keywords: ["Terraform", "IaC"]
+keywords: ["Terraform", "Azure", "Infrastructure As Code", "DevOps"]
 canonical: https://medium.com/swlh/deploy-infrastructure-to-azure-using-terraform-b55cbab13929
 ---
 
@@ -27,7 +27,72 @@ One day colleague of mine suggested trying Terraform as a potential replacement 
 
 Terraform configuration is described using HashiCorp Configuration Language (HCL). Here is the simple example of how it looks like to define Azure Storage Account.
 
+```json
+resource "azurerm_storage_account" "example" {
+  name                     = "storageaccountname"
+  resource_group_name      = "resource_group_name"
+  location                 = "resource_group_location"
+  account_tier             = "Standard"
+  account_replication_type = "GRS"
+
+  tags = {
+    environment = "dev"
+  }
+}
+```
+
 Here is the example of the same Storage Account definition using ARM template.
+
+```json
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "storageAccountType": {
+      "type": "string",
+      "defaultValue": "Standard_LRS",
+      "allowedValues": [
+        "Standard_LRS",
+        "Standard_GRS",
+        "Standard_ZRS",
+        "Premium_LRS"
+      ],
+      "metadata": {
+        "description": "Storage Account type"
+      }
+    },
+    "location": {
+      "type": "string",
+      "defaultValue": "[resourceGroup().location]",
+      "metadata": {
+        "description": "Location for all resources."
+      }
+    }
+  },
+  "variables": {
+    "storageAccountName": "[concat('store', uniquestring(resourceGroup().id))]"
+  },
+  "resources": [
+    {
+      "type": "Microsoft.Storage/storageAccounts",
+      "apiVersion": "2019-04-01",
+      "name": "[variables('storageAccountName')]",
+      "location": "[parameters('location')]",
+      "sku": {
+        "name": "[parameters('storageAccountType')]"
+      },
+      "kind": "StorageV2",
+      "properties": {}
+    }
+  ],
+  "outputs": {
+    "storageAccountName": {
+      "type": "string",
+      "value": "[variables('storageAccountName')]"
+    }
+  }
+}
+```
 
 After seeing such a huge difference in the amount of configuration that needs to be written, I decided to continue exploring Terraform.
 
@@ -55,6 +120,19 @@ The module is an excellent way to unify multiple resource definitions that are u
 
 All modules are called in the `main.tf` file. Here is an example of how you call the `sql-server` module in the `main.tf` file.
 
+```json
+module "sql-server" {
+    source                     = "./modules/sql-server"
+    resource_group_name        = var.resource_group_name
+    location                   = var.location
+    common_tags                = local.common_tags
+    sql_server_name            = var.sql_server_name
+    sql_administrator_login    = var.sql_administrator_login
+    sql_administrator_password = var.sql_administrator_password
+    sql_firewall_rules         = var.sql_firewall_rules
+}
+```
+
 ### Storing secrets
 
 Never store sensitive data in the code repository. Arguably you can store sensitive data for the development environment to ease up onboarding of the new team members, but only when you use a private repository.
@@ -63,7 +141,25 @@ Luckily, Terraform provides a way of passing such data to the template during th
 
 Example of the `terraform init` command where Azure Blob Storage is used as remote storage to store Terraform resource state in a [centralized way](https://www.terraform.io/docs/backends/types/azurerm.html):
 
+```json
+terraform init
+-backend-config="storage_account_name=${nameofyourstorageaccount}"
+-backend-config="container_name=${blob_container_name}"
+-backend-config="key=${blob_file_name}"
+-backend-config="access_key=${storage_account_access_key}"
+-input=false
+```
+
 Below is the example of the `terraform plan` command where `azure_client_secret` of Azure AD service principal is used for authentication to the Azure:
+
+```json
+terraform plan
+-var-file="environments/${environment}/variables.tfvars"
+-var "azure_client_secret=${azure_client_secret}"
+-input=false
+-detailed-exitcode
+-out=tfplan
+```
 
 [Guide on how to create a new service principal in Azure.](https://www.terraform.io/docs/providers/azurerm/guides/service_principal_client_secret.html)
 

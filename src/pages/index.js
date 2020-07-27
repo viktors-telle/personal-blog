@@ -43,8 +43,8 @@ class IndexPage extends React.Component {
           I have coached and mentored other developers for the last 5 years.
         </p>
         <p>
-          I also occasionally write about my personal experience with different
-          technologies.
+          I also occasionally write about my personal work experience in my
+          blog.
         </p>
         <Link to="/blog/">
           <Button marginTop="35px">Go to Blog</Button>

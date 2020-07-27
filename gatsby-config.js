@@ -24,9 +24,40 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-embed-gist`,
-            options: {},
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 590,
+            },
           },
+          {
+            resolve: "gatsby-remark-external-links",
+            options: {
+              target: "_blank",
+              rel: "noopener noreferrer",
+            },
+          },
+          {
+            resolve: `gatsby-remark-responsive-iframe`,
+            options: {
+              wrapperStyle: `margin-bottom: 1.0725rem`,
+            },
+          },
+          {
+            resolve: `gatsby-remark-embed-gist`,
+            options: {
+              username: "viktors-telle",
+              gistDefaultCssInclude: true,
+            },
+          },
+          {
+            resolve: `gatsby-remark-vscode`,
+            options: {
+              theme: "Abyss",
+            },
+          },
+          `gatsby-remark-prismjs`,
+          `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-smartypants`,
         ],
       },
     },
@@ -51,39 +82,39 @@ module.exports = {
         name: `assets`,
       },
     },
-    {
-      resolve: `gatsby-plugin-mdx`,
-      options: {
-        extensions: [".mdx", ".md"],
-        gatsbyRemarkPlugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 590,
-            },
-          },
-          {
-            resolve: `gatsby-remark-responsive-iframe`,
-            options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
-            },
-          },
-          {
-            resolve: `gatsby-remark-vscode`,
-            options: {
-              theme: "Abyss",
-            },
-          },
-          {
-            resolve: `gatsby-remark-copy-linked-files`,
-          },
-          {
-            resolve: `gatsby-remark-smartypants`,
-          },
-        ],
-        plugins: [`gatsby-remark-images`],
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-mdx`,
+    //   options: {
+    //     extensions: [".mdx", ".md"],
+    //     gatsbyRemarkPlugins: [
+    //       {
+    //         resolve: `gatsby-remark-images`,
+    //         options: {
+    //           maxWidth: 590,
+    //         },
+    //       },
+    //       {
+    //         resolve: `gatsby-remark-responsive-iframe`,
+    //         options: {
+    //           wrapperStyle: `margin-bottom: 1.0725rem`,
+    //         },
+    //       },
+    //       {
+    //         resolve: `gatsby-remark-vscode`,
+    //         options: {
+    //           theme: "Abyss",
+    //         },
+    //       },
+    //       {
+    //         resolve: `gatsby-remark-copy-linked-files`,
+    //       },
+    //       {
+    //         resolve: `gatsby-remark-smartypants`,
+    //       },
+    //     ],
+    //     plugins: [`gatsby-remark-images`],
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {

@@ -1,44 +1,55 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import { MDXRenderer } from "gatsby-plugin-mdx"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 
-class BlogPostTemplate extends React.Component {
-  render() {
-    const post = this.props.data.mdx
-    const siteTitle = this.props.data.site.siteMetadata.title
-    const { previous, next } = this.props.pageContext
+const BlogPostTemplate = ({ data, pageContext, location }) => {
+  const post = data.markdownRemark
+  const siteTitle = data.site.siteMetadata.title
+  const { previous, next } = pageContext
 
-    return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO
-          title={post.frontmatter.title}
-          description={post.frontmatter.description || post.excerpt}
-          canonical={post.frontmatter.canonical}
-        />
-        <h1>{post.frontmatter.title}</h1>
-        <p
-          style={{
-            ...scale(-1 / 5),
-            display: `block`,
-            marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
-          }}
-        >
-          {post.frontmatter.date}
-        </p>
-        <MDXRenderer>{post.body}</MDXRenderer>
+  return (
+    <Layout location={location} title={siteTitle}>
+      <SEO
+        title={post.frontmatter.title}
+        description={post.frontmatter.description || post.excerpt}
+        canonical={post.frontmatter.canonical}
+      />
+      <article>
+        <header>
+          <h1
+            style={{
+              marginTop: rhythm(1),
+              marginBottom: 0,
+            }}
+          >
+            {post.frontmatter.title}
+          </h1>
+          <p
+            style={{
+              ...scale(-1 / 5),
+              display: `block`,
+              marginBottom: rhythm(1),
+            }}
+          >
+            {post.frontmatter.date}
+          </p>
+        </header>
+        <section dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
           style={{
             marginBottom: rhythm(1),
           }}
         />
-        <Bio />
+        <footer>
+          <Bio />
+        </footer>
+      </article>
 
+      <nav>
         <ul
           style={{
             display: `flex`,
@@ -50,22 +61,22 @@ class BlogPostTemplate extends React.Component {
         >
           <li>
             {previous && (
-              <Link to={`/blog${previous.fields.slug}`} rel="prev">
+              <Link to={previous.fields.slug} rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
             )}
           </li>
           <li>
             {next && (
-              <Link to={`/blog${next.fields.slug}`} rel="next">
+              <Link to={next.fields.slug} rel="next">
                 {next.frontmatter.title} →
               </Link>
             )}
           </li>
         </ul>
-      </Layout>
-    )
-  }
+      </nav>
+    </Layout>
+  )
 }
 
 export default BlogPostTemplate
@@ -75,13 +86,12 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-        author
       }
     }
-    mdx(fields: { slug: { eq: $slug } }) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       excerpt(pruneLength: 160)
-      body
+      html
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")

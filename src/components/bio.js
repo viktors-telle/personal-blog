@@ -16,7 +16,7 @@ function Bio() {
   return (
     <StaticQuery
       query={bioQuery}
-      render={data => {
+      render={(data) => {
         const { author } = data.site.siteMetadata
         return (
           <Container>
@@ -34,7 +34,7 @@ function Bio() {
               }}
             />
             <p>
-              System architect and Full Stack Developer. <br></br>Passionate
+              System architect and Full-Stack Developer. <br></br>Passionate
               about clean code and clean architecture.
             </p>
           </Container>
