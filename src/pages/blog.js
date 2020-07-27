@@ -5,6 +5,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
+import Button from "../components/button"
 
 const Blog = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -24,7 +25,10 @@ const Blog = ({ data, location }) => {
                   marginBottom: rhythm(1 / 4),
                 }}
               >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                <Link
+                  style={{ boxShadow: `none` }}
+                  to={`/blog${node.fields.slug}`}
+                >
                   {title}
                 </Link>
               </h3>
@@ -40,6 +44,9 @@ const Blog = ({ data, location }) => {
           </article>
         )
       })}
+      <Link to="/">
+        <Button marginTop="85px">Go Home</Button>
+      </Link>
     </Layout>
   )
 }

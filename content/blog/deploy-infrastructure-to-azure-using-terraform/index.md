@@ -3,7 +3,7 @@ title: Deploy your infrastructure to Azure using Terraform
 description:
  I will share my experience of migrating from ARM to Terraform, how to organize project structure, and the pros and cons of using Terraform.
 date: '2020-03-04T20:48:34.226Z'
-slug: /@viktors.telle/deploy-infrastructure-to-azure-using-terraform-b55cbab13929
+slug: deploy-infrastructure-to-azure-using-terraform
 keywords: ["Terraform", "Azure", "Infrastructure As Code", "DevOps"]
 canonical: https://medium.com/swlh/deploy-infrastructure-to-azure-using-terraform-b55cbab13929
 ---

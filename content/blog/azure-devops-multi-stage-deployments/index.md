@@ -3,7 +3,7 @@ title: Azure DevOps multi-stage deployments
 description:
  The multi-stage pipelines feature is relatively new in Azure DevOps and allows you to split the deployment process into multiple stages and reuse then.
 date: '2020-03-15T20:07:01.629Z'
-slug: /@viktors.telle/azure-devops-multi-stage-deployments-708a54700a85
+slug: azure-devops-multi-stage-deployments
 keywords: ["Azure", "DevOps", "Terraform", "Deployment"]
 canonical: https://levelup.gitconnected.com/azure-devops-multi-stage-deployments-708a54700a85
 ---
