@@ -9,7 +9,7 @@ keywords: []
 canonical: https://levelup.gitconnected.com/azure-devops-multi-stage-deployments-708a54700a85
 ---
 
-![Photo by [Luke Pamer](https://unsplash.com/@luke_pamer?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](img\0__Ca70r4BQdQAJQp26.jpg)
+![Photo by [Luke Pamer](https://unsplash.com/@luke_pamer?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](0__Ca70r4BQdQAJQp26.jpg)
 Photo by [Luke Pamer](https://unsplash.com/@luke_pamer?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)
 
 The [multi-stage pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/multi-stage-pipelines-experience?view=azure-devops) feature is relatively new in Azure DevOps, and it is currently in preview mode. This feature allows you to split the deployment process into multiple stages and reuse them across multiple projects. Pipelines are described in `yaml` format. In this article, I will describe how to configure the deployment of Terraform templates to provision infrastructure in Azure.
@@ -31,7 +31,7 @@ So my journey began with reading the [documentation](https://docs.microsoft.com/
 
 In the beginning, I created a separate Git repository for storing a deployment template that can be used by other projects.
 
-![](img\1__0E9P__973Ld9N8oFVM__XM7A.png)
+![](1__0E9P__973Ld9N8oFVM__XM7A.png)
 
 `main.yml` is the entry point, which consists of `validate`  and `deploy`  stages.
 
@@ -62,7 +62,7 @@ As you might notice, the actual deployment steps are defined in a separate templ
 
 You can use variables groups to store common deployment variables. I have utilized them to define variables such as the Azure Storage Account access key, Azure Service Principal client secret, and few more.
 
-![](img\1__F__TznwS2WdpWWRSlhoBVsA.png)
+![](1__F__TznwS2WdpWWRSlhoBVsA.png)
 
 I did not find a better way how to separate variables by environments other than adding environment postfix to the name of the variable group.
 
@@ -72,7 +72,7 @@ Azure DevOps also provides a way to [link the variable group with Azure Key Vaul
 
 In the end, I have created the following deployment pipeline:
 
-![](img\1__eFClWdvCWIsOw0hv__BSPVQ.png)
+![](1__eFClWdvCWIsOw0hv__BSPVQ.png)
 
 It consists of `validate` and `deploy` stages. Deploy stage has three jobs, one for each environment. Deployment jobs are executed based on conditions involving Git repository branch names:
 

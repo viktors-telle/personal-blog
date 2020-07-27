@@ -3,7 +3,8 @@ module.exports = {
     // edit below
     title: `Viktors Telle blog`,
     author: `Viktors Telle`,
-    description: `Viktors Telle personal website and blog. Viktors is system architect and full-stack developer with 12+ years of experience focusing on developing application using .NET Core and SPA frameworks like React and Angular.`,
+    description: `Viktors Telle personal website and blog. Viktors is system architect and full-stack developer with 12+ years of experience. My focus is primarily on developing applications using .NET Core and SPA frameworks like React and Angular. I am also experienced in setting up CI/CD pipelines in TeamCity, Octopus Deploy, and Azure
+    DevOps.`,
     siteUrl: `https://viktorstelle.com/`,
     social: {
       twitter: `ViktorsTelle`,
@@ -17,7 +18,6 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-transformer-remark`,
@@ -88,7 +88,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // edit below
-        // trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-173562871-1`,
       },
     },
     {
@@ -101,9 +101,10 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         // edit below
-        // icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/viktors-telle-512x512.png`,
       },
     },
+    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {

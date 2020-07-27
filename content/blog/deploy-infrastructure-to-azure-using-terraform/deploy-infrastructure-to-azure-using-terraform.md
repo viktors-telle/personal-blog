@@ -9,7 +9,7 @@ keywords: ["Terraform", "IaC"]
 canonical: https://medium.com/swlh/deploy-infrastructure-to-azure-using-terraform-b55cbab13929
 ---
 
-![Terraform Storage Account Resource Example](img\1__H9qUYM9o12tBQBB8WeBl4Q.png)
+![Terraform Storage Account Resource Example](storage-account-example.png)
 
 First of all, what is [Terraform](https://www.terraform.io/)? It is a great tool to describe your cloud infrastructure in the code (IaC) in a declarative way. The main benefit of using this approach is that you will be able to reproduce your infrastructure easily if something goes wrong. It also enables versioning and control over the changes you will make to the infrastructure. In this article, I am going to describe my own experience with Terraform while building infrastructure in Azure.
 
@@ -27,13 +27,7 @@ One day colleague of mine suggested trying Terraform as a potential replacement 
 
 Terraform configuration is described using HashiCorp Configuration Language (HCL). Here is the simple example of how it looks like to define Azure Storage Account.
 
-`gist:viktors-telle/8ad912e37280e1cb1fe9f0506ea7d89e#storage-account.tf`
-
 Here is the example of the same Storage Account definition using ARM template.
-
-`gist:viktors-telle/623637347a0f0ac302ce2c70088c7b4f#storage-account.json`
-
-`gist:weirdpattern/ce54fdb1e5621b5966e146026995b974#syntax.text`
 
 After seeing such a huge difference in the amount of configuration that needs to be written, I decided to continue exploring Terraform.
 
@@ -43,7 +37,7 @@ This was the thing that I struggled with the most. How the heck I should organiz
 
 After reading quite a few blog posts about possible solutions, I came up with the following structure:
 
-![Possible Terraform Configuration Project Structure](img\1__VA6Iqi1QXpgpSLy5s9bmrQ.png)
+![Possible Terraform Configuration Project Structure](terraform-configuration-project-structure.png)
 
 [VS Code](https://code.visualstudio.com/) has been my standard code editor already for some time. It is free and works on Windows, Mac, and Linux. I have installed [Azure Terraform](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureterraform) extension for Terraform syntax support.
 
