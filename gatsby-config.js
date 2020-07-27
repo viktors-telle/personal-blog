@@ -69,7 +69,7 @@ module.exports = {
         siteUrl: `https://viktorstelle.com`,
       },
     },
-    `gatsby-plugin-feed-mdx`,
+    `gatsby-plugin-feed`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
