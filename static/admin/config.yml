@@ -17,5 +17,5 @@ collections:
       - { name: title, label: Title }
       - { name: description, label: Description }
       - { name: canonical, label: Canonical link }
-      - { name: keywords, label: Keywords }
+      - { name: keywords, label: Keywords, widget: list }
       - { name: body, label: Body, widget: markdown }
