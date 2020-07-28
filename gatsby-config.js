@@ -9,7 +9,7 @@ module.exports = {
     social: {
       twitter: `ViktorsTelle`,
       linkedIn: `viktors-telle`,
-      medium: `viktors.telle`,
+      medium: `@viktors.telle`,
       github: `viktors-telle`,
     },
     menuLinks: [
