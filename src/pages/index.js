@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -41,7 +41,12 @@ class IndexPage extends React.Component {
           DevOps. I also have experience in coaching and mentoring other
           developers for the last five years.
         </p>
-        <p>Occasionally I share my personal work experience in my blog.</p>
+        <p>
+          Occasionally I share my personal work experience in my{" "}
+          <Link style={{ color: `black` }} to="/blog">
+            blog
+          </Link>
+        </p>
       </Layout>
     )
   }
