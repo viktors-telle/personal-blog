@@ -5,7 +5,6 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
-import Button from "../components/button"
 
 const Blog = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -44,9 +43,6 @@ const Blog = ({ data, location }) => {
           </article>
         )
       })}
-      <Link to="/">
-        <Button marginTop="85px">Go Home</Button>
-      </Link>
     </Layout>
   )
 }

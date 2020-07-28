@@ -12,6 +12,16 @@ module.exports = {
       medium: `viktors.telle`,
       github: `viktors-telle`,
     },
+    menuLinks: [
+      {
+        name: "Home",
+        link: "/",
+      },
+      {
+        name: "Blog",
+        link: "/blog",
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-netlify-cms`,
@@ -98,7 +108,7 @@ module.exports = {
         short_name: `ViktorsTelleWeb`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#209CEE`,
         display: `minimal-ui`,
         // edit below
         icon: `content/assets/viktors-telle-512x512.png`,

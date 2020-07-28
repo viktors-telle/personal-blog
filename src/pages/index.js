@@ -1,9 +1,8 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Button from "../components/button"
 
 class IndexPage extends React.Component {
   render() {
@@ -43,9 +42,6 @@ class IndexPage extends React.Component {
           last five years.
         </p>
         <p>Occasionally I share my personal work experience in my blog.</p>
-        <Link to="/blog/">
-          <Button marginTop="35px">Go to Blog</Button>
-        </Link>
       </Layout>
     )
   }

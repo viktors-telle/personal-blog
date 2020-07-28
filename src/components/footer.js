@@ -1,5 +1,6 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
+import SocialLink from "./socialLink"
 
 export default function Footer() {
   return (
@@ -18,7 +19,7 @@ export default function Footer() {
           }
         }
       `}
-      render={data => {
+      render={(data) => {
         const { social } = data.site.siteMetadata
         return (
           <footer
@@ -27,37 +28,29 @@ export default function Footer() {
               margin: `24px`,
             }}
           >
-            <a
-              href={`https://twitter.com/${social.twitter}`}
-              target="_blank"
-              rel="noreferrer"
-            >
-              Twitter
-            </a>
+            <SocialLink
+              domain="twitter.com"
+              userName={social.twitter}
+              name="Twitter"
+            />
             &nbsp;|&nbsp;
-            <a
-              href={`https://linkedin.com/in/${social.linkedIn}`}
-              target="_blank"
-              rel="noreferrer"
-            >
-              LinkedIn
-            </a>
+            <SocialLink
+              domain="linkedin.com"
+              userName={social.linkedIn}
+              name="LinkedIn"
+            />
             &nbsp;|&nbsp;
-            <a
-              href={`https://medium.com/@${social.medium}`}
-              target="_blank"
-              rel="noreferrer"
-            >
-              Medium
-            </a>
+            <SocialLink
+              domain="medium.com"
+              userName={social.medium}
+              name="Medium"
+            />
             &nbsp;|&nbsp;
-            <a
-              href={`https://github.com/${social.github}`}
-              target="_blank"
-              rel="noreferrer"
-            >
-              GitHub
-            </a>
+            <SocialLink
+              domain="github.com"
+              userName={social.github}
+              name="GitHub"
+            />
           </footer>
         )
       }}
