@@ -64,7 +64,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-vscode`,
             options: {
-              theme: "Abyss",
+              theme: "Dark+ (default dark)",
             },
           },
           `gatsby-remark-prismjs`,
