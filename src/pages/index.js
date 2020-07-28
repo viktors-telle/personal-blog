@@ -22,13 +22,7 @@ class IndexPage extends React.Component {
             `Clean Code`,
           ]}
         />
-        <h1>
-          Hey people{" "}
-          <span role="img" aria-label="wave emoji">
-            👋
-          </span>
-        </h1>
-        <p>Welcome to my site.</p>
+        <h1>Welcome!</h1>
         <p>
           My name is Viktors Telle, and I am a system architect and full-stack
           developer with 12+ years of experience. I have worked at a variety of
