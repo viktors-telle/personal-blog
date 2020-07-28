@@ -44,7 +44,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             marginBottom: rhythm(1),
           }}
         />
-        <p>
+        {/* <p>
           {post.frontmatter.keywords.map((tag, i) => [
             <strong
               style={{
@@ -58,7 +58,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               {tag}
             </strong>,
           ])}
-        </p>
+        </p> */}
       </article>
 
       <nav>
