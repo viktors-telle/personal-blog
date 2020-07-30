@@ -5,7 +5,7 @@ module.exports = {
     author: `Viktors Telle`,
     description: `Viktors Telle personal website and blog. Viktors is system architect and full-stack developer with 12+ years of experience. My focus is primarily on developing applications using .NET Core and SPA frameworks like React and Angular. I am also experienced in setting up CI/CD pipelines in TeamCity, Octopus Deploy, and Azure
     DevOps.`,
-    siteUrl: `https://viktorstelle.com/`,
+    siteUrl: `https://viktorstelle.com`,
     social: {
       twitter: `ViktorsTelle`,
       linkedIn: `viktors-telle`,
@@ -29,6 +29,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
