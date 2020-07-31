@@ -1,6 +1,6 @@
 ---
 title: Podcasts that I would recommend listening
-path: podcasts-that-i-would-recommend-listening
+path: ""
 date: 2020-07-31T03:36:45.460Z
 description: When the Covid-19 outbreak started, I started to work from home as
   many people did. It meant that I do not have to spend extra hours on the
