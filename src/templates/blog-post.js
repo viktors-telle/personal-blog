@@ -33,10 +33,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               ...scale(-1 / 5),
               display: `block`,
               marginBottom: rhythm(1),
+              marginTop: rhythm(0.5),
             }}
           >
-            {post.frontmatter.date}
-            &nbsp;&bull;&nbsp;{post.timeToRead} min read
+            {post.frontmatter.date} &bull; {post.timeToRead} min read
           </p>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -45,21 +45,23 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             marginBottom: rhythm(1),
           }}
         />
-        {/* <p>
+        <p>
           {post.frontmatter.keywords.map((tag, i) => [
             <strong
+              key={i}
               style={{
                 border: `2px solid black`,
                 margin: `4px`,
                 padding: `4px`,
                 background: `#D3D3D3`,
+                lineHeight: `2.5`,
               }}
-              key={i}
             >
-              {tag}
+              {" "}
+              #{tag.replace(/ /g, "")}
             </strong>,
           ])}
-        </p> */}
+        </p>
       </article>
 
       <nav>

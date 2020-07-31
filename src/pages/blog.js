@@ -29,7 +29,7 @@ const Blog = ({ data, location }) => {
                   {title}
                 </Link>
               </h3>
-              <small>{node.frontmatter.date}&nbsp;</small>
+              <small>{node.frontmatter.date} </small>
               <small>&bull; {node.timeToRead} min read</small>
             </header>
             <section>

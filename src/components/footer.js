@@ -32,20 +32,20 @@ export default function Footer() {
               domain="twitter.com"
               userName={social.twitter}
               name="Twitter"
-            />
-            &nbsp;|&nbsp;
+            />{" "}
+            |{" "}
             <SocialLink
               domain="linkedin.com/in/"
               userName={social.linkedIn}
               name="LinkedIn"
-            />
-            &nbsp;|&nbsp;
+            />{" "}
+            |{" "}
             <SocialLink
               domain="medium.com"
               userName={social.medium}
               name="Medium"
-            />
-            &nbsp;|&nbsp;
+            />{" "}
+            |{" "}
             <SocialLink
               domain="github.com"
               userName={social.github}
