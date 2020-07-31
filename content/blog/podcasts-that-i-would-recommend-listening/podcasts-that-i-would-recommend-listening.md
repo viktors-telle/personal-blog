@@ -9,4 +9,4 @@ keywords:
   - Technology
   - Investing
 ---
-Here is the list of my top podcasts that I listen regulararly.
+Here is the list of my top podcasts that I listen to regularly.
