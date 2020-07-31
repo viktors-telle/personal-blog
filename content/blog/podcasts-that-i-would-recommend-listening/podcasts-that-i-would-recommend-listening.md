@@ -5,7 +5,8 @@ date: 2020-07-31T03:36:45.460Z
 description: When the Covid-19 outbreak started, I started to work from home as
   many people did. It meant that I do not have to spend extra hours on the
   commute. So I decided to spend the saved time to invest more in broadening my
-  knowledge. It is the best investment that you could do. Listening to the
+  knowledge in finance, entrepreneurship, and information technology. Investing
+  in your knowledge is the best investment that you could do. Listening to the
   podcasts was one of the new things that I started to do.
 canonical: ""
 keywords:
@@ -15,7 +16,7 @@ keywords:
   - Finances
   - Self Development
 ---
-When the Covid-19 outbreak started, I started to work from home as many people did. It meant that I do not have to spend extra hours on the commute. So I decided to spend the saved time to invest more in broadening my knowledge. It is the best investment that you could do. Listening to the podcasts was one of the new things that I started to do.
+When the Covid-19 outbreak started, I started to work from home as many people did. It meant that I do not have to spend extra hours on the commute. So I decided to spend the saved time to invest more in broadening my knowledge in finance, entrepreneurship, and information technology. Investing in your knowledge is the best investment that you could do. Listening to the podcasts was one of the new things that I started to do.
 
 Here is the list of the five podcasts that I listen to regularly. 
 
