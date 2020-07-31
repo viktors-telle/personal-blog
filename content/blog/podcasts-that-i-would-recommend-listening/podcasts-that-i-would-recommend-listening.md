@@ -20,11 +20,15 @@ Here is the list of the five podcasts that I listen to regularly.
 
 ## We Study Billionaires
 
-This is one of my favorites.
+This is one of my favorites. It comes out every Sunday.
 
 ## Techmeme Ride Home
 
+This Podcasts comes out every workday. Brian does a great job informing us of the latest technology news. 
+
 ## The Web Platform Podcast
+
+
 
 ## AskPat 2.0
 
