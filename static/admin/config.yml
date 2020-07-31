@@ -10,11 +10,10 @@ collections:
   - name: blog
     label: Blog
     folder: content/blog
-    path: "{{slug}}"
+    path: "{{slug}}/index"
     create: true
     fields:
       - { name: title, label: Title }
-      - { name: path, label: Path, required: false }
       - { name: date, label: Date, widget: date }
       - { name: description, label: Description, widget: text }
       - { name: canonical, label: Canonical link, required: false }
