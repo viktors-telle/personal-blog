@@ -10,7 +10,7 @@ collections:
   - name: blog
     label: Blog
     folder: content/blog
-    path: "{{slug}}/{{slug}}"
+    path: "{{slug}}/index.md"
     create: true
     fields:
       - { name: title, label: Title }
