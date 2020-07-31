@@ -19,5 +19,10 @@ collections:
       - { name: description, label: Description, widget: text }
       - { name: canonical, label: Canonical link, required: false }
       - { name: keywords, label: Keywords, widget: list }
-      - { name: thumbnail, label: Featured Image, widget: image }
+      - {
+          name: thumbnail,
+          label: Featured Image,
+          widget: image,
+          required: false,
+        }
       - { name: body, label: Body, widget: markdown }
