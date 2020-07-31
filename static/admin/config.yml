@@ -17,6 +17,6 @@ collections:
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - { name: description, label: Description }
-      - { name: canonical, label: Canonical link }
+      - { name: canonical, label: Canonical link, required: false }
       - { name: keywords, label: Keywords, widget: list }
       - { name: body, label: Body, widget: markdown }
