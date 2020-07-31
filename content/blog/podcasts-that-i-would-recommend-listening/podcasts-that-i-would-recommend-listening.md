@@ -42,11 +42,13 @@ https://open.spotify.com/show/3apF0cv7ub3mC3J5e7Lq6v?si=NKRzqe9XSM-qHJFi93PPtA
 
 ## AskPat 2.0
 
+When it comes to entrepreneurship podcast by Pat Flynn is the best.
+
 https://open.spotify.com/show/00CuvjXkTsBJkp7F2v1Rjl?si=IHAYvyNaQcCy_X6Z89MC_Q
 
 ## The College Investor Audio Show
 
-I watched some episodes on topics that interested me at a particular time.
+Again podcast covering finances and investing. I watched some episodes on topics that interested me at a particular time.
 
 https://open.spotify.com/show/2WtF5XvOdiNNLSXbkPmvLa?si=FqYbpLBpT12V267ITgKpWw
 
