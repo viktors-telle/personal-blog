@@ -1,7 +1,7 @@
 ---
+title: Podcasts that I would recommend listening
 path: podcasts-that-i-would-recommend-listening
 date: 2020-07-31T03:36:45.460Z
-title: Podcasts that I would recommend listening
 description: When the Covid-19 outbreak started, I started to work from home as
   many people did.  I decided to invest more in broadening my knowledge since it
   is the best investment that you could possibly do. Also, I did not have to
@@ -14,16 +14,18 @@ keywords:
   - Investing
   - Self Development
 ---
-First I wanted to understand the finances better.
+First, I wanted to understand finances better so I did the research and found a couple of promising podcasts.
 
 Here is the list of the five podcasts that I listen to regularly.
 
-We Study Billionaires
+## We Study Billionaires
 
-Techmeme Ride Home
+This is one of my favorites.
 
-The Web Platform Podcast
+## Techmeme Ride Home
 
-AskPat 2.0
+## The Web Platform Podcast
 
-The College Investor Audio Show
+## AskPat 2.0
+
+## The College Investor Audio Show
