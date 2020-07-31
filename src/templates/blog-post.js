@@ -50,7 +50,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             <strong
               key={i}
               style={{
-                border: `2px solid black`,
                 margin: `4px`,
                 padding: `4px`,
                 background: `#D3D3D3`,
