@@ -13,10 +13,11 @@ collections:
     path: "{{slug}}/{{slug}}"
     create: true
     fields:
+      - { name: title, label: Title }
       - { name: path, label: Path }
       - { name: date, label: Date, widget: date }
-      - { name: title, label: Title }
-      - { name: description, label: Description }
+      - { name: description, label: Description, widget: text }
       - { name: canonical, label: Canonical link, required: false }
       - { name: keywords, label: Keywords, widget: list }
+      - { name: thumbnail, label: Featured Image, widget: image }
       - { name: body, label: Body, widget: markdown }
