@@ -17,8 +17,8 @@ const Logo = () => {
     query {
       file(name: { eq: "viktors-telle-192x192" }, extension: { eq: "png" }) {
         childImageSharp {
-          fluid(maxWidth: 50, pngQuality: 80) {
-            ...GatsbyImageSharpFluid
+          fluid(maxWidth: 50, pngQuality: 100) {
+            ...GatsbyImageSharpFluid_withWebp_noBase64
           }
         }
       }
@@ -27,7 +27,12 @@ const Logo = () => {
 
   return (
     <LogoWrap as={Link} to="/">
-      <Img fluid={data.file.childImageSharp.fluid} alt="logo" />
+      <Img
+        fadeIn={false}
+        loading="eager"
+        fluid={data.file.childImageSharp.fluid}
+        alt="logo"
+      />
     </LogoWrap>
   )
 }
