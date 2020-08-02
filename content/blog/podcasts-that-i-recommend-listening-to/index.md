@@ -69,7 +69,7 @@ These and many more questions get answered during the show and help you and your
 
 ![The College Investor Audio Show](the-college-investor-audio-show.jpg "The College Investor Audio Show")
 
-Again podcast covering finances and investing. I watched some episodes on topics that interested me at a particular time. For example:
+One more podcast covering finances and investing. I watched some episodes on topics that interested me at a particular time. For example:
 
 * The Cheapest Investing Platforms and Robo-advisors.
 * 6 Ideas to Diversify Your Income Streams
