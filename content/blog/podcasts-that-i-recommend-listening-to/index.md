@@ -20,7 +20,7 @@ Here is the list of the five podcasts that I listen to regularly.
 
 ## We Study Billionaires
 
-![We Study Billionaires Podcast](wsb-600x600.jpg "We Study Billionaires Podcast")
+![We Study Billionaires Podcast]( "We Study Billionaires Podcast")
 
 First, I wanted to understand finances better so I did the research and found a couple of promising podcasts. This is one of my favorites. It comes out every Sunday and informs you of the latest developments in economics and investing. The podcast hosts Preston Pysh and Stig Brodersen talk about the investment strategies of famous investors like Warren Buffet and Ray Dalio. They also review popular books on investing and entrepreneurship and invite guests to talk about the latest trends in economics and investing. I especially enjoyed these episodes:
 
@@ -34,13 +34,15 @@ First, I wanted to understand finances better so I did the research and found a 
 
 ## Techmeme Ride Home
 
-![Techmeme Ride Home Podcast](cd7323ae83c39acdee803cf2da21d32a1558e3e3371368d4f136a03ae8ae0543e66a727bab8c48564d393febfbdb606264176cb621ee87cc1573574ec4da943a.jpeg "Techmeme Ride Home Podcast")
+![Techmeme Ride Home Podcast]( "Techmeme Ride Home Podcast")
 
 This podcast comes out every weekday. Brian does a great job informing us of the latest technology news such as product news, recent acquisitions, earnings reports of the big tech companies. This podcast is based on [techmeme.com](https://www.techmeme.com/), which is Silicon Valley's most-read news source.
 
 [Link to the show on Spotify](https://open.spotify.com/show/1jBNbPVlGUen3sWdd25ho6?si=TPm4Ua8ASnqhMr6cFOQ78w)
 
 ## The Web Platform Podcast
+
+![]()
 
 I am a web developer myself. It is only reasonable that I should listen to the podcast that talks about the latest trends in web development.
 
@@ -49,6 +51,8 @@ This podcast was founded in 2014 by HTML W3C invited expert Erik Isaksen. It cov
 [Link to the show on Spotify](https://open.spotify.com/show/3apF0cv7ub3mC3J5e7Lq6v?si=NKRzqe9XSM-qHJFi93PPtA)
 
 ## AskPat 2.0
+
+![]()
 
 When it comes to entrepreneurship podcast by Pat Flynn is the best. This podcast comes out every day. Pat answers one question asked by one of his listeners. Questions like: 
 
@@ -61,6 +65,8 @@ These and many more questions get answered during the show and help you and your
 [Link to the show on Spotify](https://open.spotify.com/show/00CuvjXkTsBJkp7F2v1Rjl?si=IHAYvyNaQcCy_X6Z89MC_Q)
 
 ## The College Investor Audio Show
+
+![]()
 
 Again podcast covering finances and investing. I watched some episodes on topics that interested me at a particular time. For example:
 
