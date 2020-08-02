@@ -1,6 +1,6 @@
 ---
 title: Podcasts that I recommend listening to
-date: 2020-07-31T12:48:41.817Z
+date: 2020-08-02T12:48:41.817Z
 description: When the Covid-19 outbreak started, I started to work from home as
   many people did. It meant that I do not have to spend extra hours on the
   commute. So I decided to spend the saved time to invest more in broadening my
@@ -20,7 +20,7 @@ Here is the list of the five podcasts that I listen to regularly.
 
 ## We Study Billionaires
 
-![We Study Billionaires Podcast]( "We Study Billionaires Podcast")
+![We Study Billionaires](we-study-billionaires.png "We Study Billionaires")
 
 First, I wanted to understand finances better so I did the research and found a couple of promising podcasts. This is one of my favorites. It comes out every Sunday and informs you of the latest developments in economics and investing. The podcast hosts Preston Pysh and Stig Brodersen talk about the investment strategies of famous investors like Warren Buffet and Ray Dalio. They also review popular books on investing and entrepreneurship and invite guests to talk about the latest trends in economics and investing. I especially enjoyed these episodes:
 
@@ -34,7 +34,7 @@ First, I wanted to understand finances better so I did the research and found a 
 
 ## Techmeme Ride Home
 
-![Techmeme Ride Home Podcast]( "Techmeme Ride Home Podcast")
+![Techmeme Ride Home](techmeme-ride-home.jpeg "Techmeme Ride Home")
 
 This podcast comes out every weekday. Brian does a great job informing us of the latest technology news such as product news, recent acquisitions, earnings reports of the big tech companies. This podcast is based on [techmeme.com](https://www.techmeme.com/), which is Silicon Valley's most-read news source.
 
@@ -42,7 +42,7 @@ This podcast comes out every weekday. Brian does a great job informing us of the
 
 ## The Web Platform Podcast
 
-![]()
+![The Web Platform Podcast](the-web-platform-podcast.png "The Web Platform Podcast")
 
 I am a web developer myself. It is only reasonable that I should listen to the podcast that talks about the latest trends in web development.
 
@@ -52,7 +52,7 @@ This podcast was founded in 2014 by HTML W3C invited expert Erik Isaksen. It cov
 
 ## AskPat 2.0
 
-![]()
+![AskPat 2.0](ask-pat.png "AskPat 2.0")
 
 When it comes to entrepreneurship podcast by Pat Flynn is the best. This podcast comes out every day. Pat answers one question asked by one of his listeners. Questions like: 
 
@@ -66,7 +66,7 @@ These and many more questions get answered during the show and help you and your
 
 ## The College Investor Audio Show
 
-![]()
+![The College Investor Audio Show](the-college-investor-audio-show.jpg "The College Investor Audio Show")
 
 Again podcast covering finances and investing. I watched some episodes on topics that interested me at a particular time. For example:
 
