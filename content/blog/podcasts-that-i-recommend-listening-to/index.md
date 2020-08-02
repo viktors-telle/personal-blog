@@ -34,7 +34,7 @@ First, I wanted to understand finances better so I did the research and found a 
 
 ## Techmeme Ride Home
 
-!\[We Study Billionaires](https://content.production.cdn.art19.com/images/a3/09/42/cd/a30942cd-91f6-44ab-84ff-a557edc43066/cd7323ae83c39acdee803cf2da21d32a1558e3e3371368d4f136a03ae8ae0543e66a727bab8c48564d393febfbdb606264176cb621ee87cc1573574ec4da943a.jpeg)
+![Techmeme Ride Home Podcast](cd7323ae83c39acdee803cf2da21d32a1558e3e3371368d4f136a03ae8ae0543e66a727bab8c48564d393febfbdb606264176cb621ee87cc1573574ec4da943a.jpeg "Techmeme Ride Home Podcast")
 
 This podcast comes out every weekday. Brian does a great job informing us of the latest technology news such as product news, recent acquisitions, earnings reports of the big tech companies. This podcast is based on [techmeme.com](https://www.techmeme.com/), which is Silicon Valley's most-read news source.
 
