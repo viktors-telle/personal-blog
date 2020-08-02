@@ -1,5 +1,5 @@
 ---
-title: Podcasts that I recommend listening to
+title: Five podcasts that I recommend listening to
 date: 2020-08-02T12:48:41.817Z
 description: When the Covid-19 outbreak started, I started to work from home as
   many people did. It meant that I do not have to spend extra hours on the
@@ -15,7 +15,7 @@ keywords:
   - Self Development
   - Entrepreneurship
 ---
-When the Covid-19 outbreak started, I started to work from home as many people did. It meant that I do not have to spend extra hours on the commute. So I decided to spend the saved time to invest more in broadening my knowledge in finance, entrepreneurship, and information technology. Investing in your knowledge is the best investment that you could do. Listening to the podcasts was one of the new things that I started to do. I mostly listen to them during my everyday walk with my daughter as soon as she falls asleep in the stroller.
+When the Covid-19 outbreak started, I started to work from home as many people did. It meant that I do not have to spend extra hours on the commute. So I decided to spend the saved time to invest more in broadening my knowledge in finance, entrepreneurship, and information technology. Investing in your knowledge is the best investment that you could do. Listening to the podcasts was one of the new things that I started to do. I mostly listen to them during my everyday walk with my daughter, but only when she falls asleep in the stroller.
 
 Here is the list of the five podcasts that I listen to regularly.
 
