@@ -20,7 +20,7 @@ Here is the list of the five podcasts that I listen to regularly.
 
 ## We Study Billionaires
 
-!\[We Study Billionaires](https://1nodld1ltmqu3jimmy2xsgcu-wpengine.netdna-ssl.com/wp-content/uploads/2019/06/WSB-600x600.jpg)
+![We Study Billionaires Podcast](wsb-600x600.jpg "We Study Billionaires Podcast")
 
 First, I wanted to understand finances better so I did the research and found a couple of promising podcasts. This is one of my favorites. It comes out every Sunday and informs you of the latest developments in economics and investing. The podcast hosts Preston Pysh and Stig Brodersen talk about the investment strategies of famous investors like Warren Buffet and Ray Dalio. They also review popular books on investing and entrepreneurship and invite guests to talk about the latest trends in economics and investing. I especially enjoyed these episodes:
 
