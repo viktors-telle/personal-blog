@@ -15,12 +15,13 @@ class IndexPage extends React.Component {
           title="Home"
           keywords={[
             `Blog`,
-            `Software Development`,
+            `Personal experience`,
+            `Software development`,
             `C#`,
             `.NET`,
             `DevOps`,
             `React`,
-            `Clean Code`,
+            `Clean code`,
             `Family man`,
             `Viktors Telle`,
           ]}
@@ -28,8 +29,7 @@ class IndexPage extends React.Component {
         <MainPhoto />
         <h1 style={{ marginTop: `2.5rem` }}>Welcome to my site!</h1>
         <p>
-          My name is Viktors Telle, and I work as a software developer for more
-          than 12 years. I am a husband and father of the two beautiful kids. I
+          My name is Viktors Telle, and I am from Latvia. I work as a software developer for more than 12 years. I am a husband and father of the two beautiful kids. I
           am a family man, and since the Covid-19 outbreak started, I work from
           home and together with my wife take care of our kids.
         </p>
