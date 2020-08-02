@@ -14,7 +14,7 @@ keywords:
   - Finances
   - Self Development
 ---
-When the Covid-19 outbreak started, I started to work from home as many people did. It meant that I do not have to spend extra hours on the commute. So I decided to spend the saved time to invest more in broadening my knowledge in finance, entrepreneurship, and information technology. Investing in your knowledge is the best investment that you could do. Listening to the podcasts was one of the new things that I started to do.
+When the Covid-19 outbreak started, I started to work from home as many people did. It meant that I do not have to spend extra hours on the commute. So I decided to spend the saved time to invest more in broadening my knowledge in finance, entrepreneurship, and information technology. Investing in your knowledge is the best investment that you could do. Listening to the podcasts was one of the new things that I started to do. I mostly listen to them during my everyday walk with my daughter as soon as she falls asleep in the stroller.
 
 Here is the list of the five podcasts that I listen to regularly.
 
@@ -22,33 +22,41 @@ Here is the list of the five podcasts that I listen to regularly.
 
 First, I wanted to understand finances better so I did the research and found a couple of promising podcasts. This is one of my favorites. It comes out every Sunday and informs you of the latest developments in economics and investing.
 
-https://open.spotify.com/show/28RHOkXkuHuotUrkCdvlOP?si=sgpBam5cTV-00FPWApTThA
+[Link to Spotify](https://open.spotify.com/show/28RHOkXkuHuotUrkCdvlOP?si=sgpBam5cTV-00FPWApTThA)
 
 ## Techmeme Ride Home
 
-This podcast comes out every workday. Brian does a great job informing us of the latest technology news.
+This podcast comes out every weekday. Brian does a great job informing us of the latest technology news. He 
 
-https://open.spotify.com/show/1jBNbPVlGUen3sWdd25ho6?si=TPm4Ua8ASnqhMr6cFOQ78w
+[Link to Spotify](https://open.spotify.com/show/1jBNbPVlGUen3sWdd25ho6?si=TPm4Ua8ASnqhMr6cFOQ78w)
 
 ## The Web Platform Podcast
 
-I am a web developer myself. It is only reasonable that I should find the podcast that talks about the latest trends in web development.
+I am a web developer myself. It is only reasonable that I should listen to the podcast that talks about the latest trends in web development.
 
-This podcast was founded in 2014 by HTML W3C invited expert Erik Isaksen.
+This podcast was founded in 2014 by HTML W3C invited expert Erik Isaksen. It covers the latest topics in web development like [Deno](https://deno.land/), which is the new runtime for JavaScript and TypeScript, and an alternative to [Node.js](https://nodejs.org/) or modern HTML practices.
 
-https://open.spotify.com/show/3apF0cv7ub3mC3J5e7Lq6v?si=NKRzqe9XSM-qHJFi93PPtA
+[Link to Spotify](https://open.spotify.com/show/3apF0cv7ub3mC3J5e7Lq6v?si=NKRzqe9XSM-qHJFi93PPtA)
 
 ## AskPat 2.0
 
-When it comes to entrepreneurship podcast by Pat Flynn is the best.
+When it comes to entrepreneurship podcast by Pat Flynn is the best. This podcast comes out every day. Pat answers one question asked by his listener. Questions like: 
 
-https://open.spotify.com/show/00CuvjXkTsBJkp7F2v1Rjl?si=IHAYvyNaQcCy_X6Z89MC_Q
+* How to create the best "About" page on your website?
+
+  How to increase engagement and participation in your community? 
+
+  How do you handle negative reviews?
+
+These and many more questions get answered during the show and help you and your business to perform better.
+
+[Link to Spotify](https://open.spotify.com/show/00CuvjXkTsBJkp7F2v1Rjl?si=IHAYvyNaQcCy_X6Z89MC_Q)
 
 ## The College Investor Audio Show
 
 Again podcast covering finances and investing. I watched some episodes on topics that interested me at a particular time.
 
-https://open.spotify.com/show/2WtF5XvOdiNNLSXbkPmvLa?si=FqYbpLBpT12V267ITgKpWw
+[Link to Spotify](https://open.spotify.com/show/2WtF5XvOdiNNLSXbkPmvLa?si=FqYbpLBpT12V267ITgKpWw)
 
 ## Conclusion
 
