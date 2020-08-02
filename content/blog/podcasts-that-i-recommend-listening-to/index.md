@@ -22,7 +22,7 @@ Here is the list of the five podcasts that I listen to regularly.
 
 ![We Study Billionaires](we-study-billionaires.png "We Study Billionaires")
 
-First, I wanted to understand finances better so I did the research and found a couple of promising podcasts. This is one of my favorites. It comes out every Sunday and informs you of the latest developments in economics and investing. The podcast hosts Preston Pysh and Stig Brodersen talk about the investment strategies of famous investors like Warren Buffet and Ray Dalio. They also review popular books on investing and entrepreneurship and invite guests to talk about the latest trends in economics and investing. I especially enjoyed these episodes:
+First, I wanted to understand finances better so I did the research and found a couple of promising podcasts. This is one of my favorites. It comes out every Sunday and informs you of the latest developments in economics and investing. The podcast hosted by Preston Pysh and Stig Brodersen talks about the investment strategies of famous investors like Warren Buffet and Ray Dalio. They also review popular books on investing and entrepreneurship and invite guests to talk about the latest trends in economics and investing. I especially enjoyed these episodes:
 
 [TIP307: Cullen Roche on Stocks, Inflation, & COVID-19 (Business Podcast)](https://open.spotify.com/episode/5cR75xNOBhZnsO9r9zwq12?si=fjjTnt7VR2uaByZAbuAQXw)
 
@@ -36,7 +36,7 @@ First, I wanted to understand finances better so I did the research and found a 
 
 ![Techmeme Ride Home](techmeme-ride-home.jpeg "Techmeme Ride Home")
 
-This podcast comes out every weekday. Brian does a great job informing us of the latest technology news such as product news, recent acquisitions, earnings reports of the big tech companies. This podcast is based on [techmeme.com](https://www.techmeme.com/), which is Silicon Valley's most-read news source.
+This podcast comes out every weekday. Brian does a great job informing listeners of the latest technology news such as product news, recent acquisitions, earnings reports of the big tech companies. This podcast is based on [techmeme.com](https://www.techmeme.com/), which is Silicon Valley's most-read news source.
 
 [Link to the show on Spotify](https://open.spotify.com/show/1jBNbPVlGUen3sWdd25ho6?si=TPm4Ua8ASnqhMr6cFOQ78w)
 
@@ -46,7 +46,7 @@ This podcast comes out every weekday. Brian does a great job informing us of the
 
 I am a web developer myself. It is only reasonable that I should listen to the podcast that talks about the latest trends in web development.
 
-This podcast was founded in 2014 by HTML W3C invited expert Erik Isaksen. It covers the latest topics in web development like [Deno](https://deno.land/), which is the new runtime for JavaScript and TypeScript, and an alternative to [Node.js](https://nodejs.org/) or modern HTML practices.
+This podcast was founded in 2014 by HTML W3C invited expert Erik Isaksen. It covers the latest topics in web development such as [Deno](https://deno.land/), which is the new runtime for JavaScript and TypeScript, and an alternative to [Node.js](https://nodejs.org/), modern HTML practices, or the latest tools for the web development.
 
 [Link to the show on Spotify](https://open.spotify.com/show/3apF0cv7ub3mC3J5e7Lq6v?si=NKRzqe9XSM-qHJFi93PPtA)
 
@@ -60,7 +60,7 @@ When it comes to entrepreneurship podcast by Pat Flynn is the best. This podcast
 * How to increase engagement and participation in your community? 
 * How do you handle negative reviews?
 
-These and many more questions get answered during the show and help you and your business to perform better. 
+These and many more questions get answered during the show and help you and your business to perform better. Probably later I will also listen to another Pat Flynn's podcast: "[The Smart Passive Income Online Business and Blogging Podcast](https://open.spotify.com/show/7wjv5MRCXWXImqTFhcufLy?si=EK4-SNgZRi6OrHW_NOYNdw)".
 
 [Link to the show on Spotify](https://open.spotify.com/show/00CuvjXkTsBJkp7F2v1Rjl?si=IHAYvyNaQcCy_X6Z89MC_Q)
 
