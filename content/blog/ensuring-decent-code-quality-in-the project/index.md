@@ -12,20 +12,20 @@ Code quality is the most important goal that you should pursue in your project.
 
 ## Unit tests
 
-xUnit, nUnit does not really matter what to choose. Strive for 100% coverage.
-
-## Code Reviews
-
-Remote code reviews via Pull Requests.
+It does not matter, whether you choose xUnit, nUnit, or any other library. Strive for 100% coverage and enforce the minimum allowed code coverage by using a static code analyzer.
 
 ## Static Code Analysis
 
-SonarLint, SonarQube
+SonarLint, SonarQube.
+
+## Code Reviews
+
+Remote code reviews via Pull Requests. If possible also try to do the reviews in person.
 
 ## Automated CI/CD pipeline
 
-Azure DevOps
+Azure DevOps.
 
 ## Automated tests
 
-Selenium
+Selenium.
