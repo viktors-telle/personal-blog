@@ -68,9 +68,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           ])}
         </p>
       </article>
-
-      <DiscussionEmbed {...disqusConfig} />
-
       <nav>
         <ul
           style={{
@@ -97,6 +94,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           </li>
         </ul>
       </nav>
+      <DiscussionEmbed {...disqusConfig} />
     </Layout>
   )
 }
