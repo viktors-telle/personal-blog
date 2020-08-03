@@ -7,10 +7,13 @@ keywords:
   - Code Reviews
   - Static Code Analysis
   - Quality Software
+  - .NET
 ---
 Code quality is the most important goal that you should pursue in your project. If neglected, it can cause a devastating effect in the long run.
 
 ## Unit tests
+
+The main benefit of writing unit tests is the  
 
 It does not matter, whether you choose xUnit, nUnit, or any other library. Strive for 100% coverage and enforce the minimum allowed code coverage by using a static code analyzer.
 
