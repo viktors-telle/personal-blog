@@ -25,7 +25,9 @@ export default function Footer() {
           <footer
             style={{
               textAlign: `center`,
-              margin: `24px`,
+              padding: `0rem 1.3125rem`,
+              maxWidth: `42rem`,
+              margin: `0 auto 0 auto`,
             }}
           >
             <SocialLink
@@ -51,6 +53,14 @@ export default function Footer() {
               userName={social.github}
               name="GitHub"
             />
+            <p
+              style={{
+                textAlign: `left`,
+                marginTop: `1rem`,
+              }}
+            >
+              <small>© 2020 - Viktors Telle. All rights reserved.</small>
+            </p>
           </footer>
         )
       }}
