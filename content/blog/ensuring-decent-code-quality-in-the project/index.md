@@ -16,7 +16,7 @@ It does not matter, whether you choose xUnit, nUnit, or any other library. Striv
 
 ## Static Code Analysis
 
-I tried SonarQube.
+Static code analysis is the way to ensure the code meets the certain quality bar.
 
 What are the benefits of static code analysis?
 
