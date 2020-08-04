@@ -54,13 +54,15 @@ Ideally, deploys should be fully automated. Production can be an exception to th
 
 Tools such as Octopus Deploy provide the possibility to schedule deployment to a particular time. I encourage you to build an infrastructure that allows you to perform zero-downtime deployments. Then you also can automate the deployments and deploy every feature to the production automatically.
 
-## Automated Tests
+## Automated (UI) Tests
 
 Automated tests should provide you with even more confidence that new functionality did not break the existing one.
 
 If you are a .NET developer, then [SpecFlow](https://specflow.org/) is probably one of the best choices. SpecFlow is the #1 .NET open-source framework for Behavior Driven Development, Acceptance Test Driven Development, and Specification by Example.
 
-To run the SpecFlow scenarios, you need an engine. Selenium goes hand in hand with SpecFlow and allows you to run the SpecFlow scenarios.
+To run the SpecFlow scenarios in the browser, you need a browser automation framework. [Selenium WebDriver](https://www.selenium.dev/documentation/en/webdriver/) goes hand in hand with SpecFlow and allows you to run the SpecFlow scenarios in the browser and interact with your web application.
+
+Automated tests should be executed automatically as part of your CI pipeline.
 
 ## Conclusion
 
