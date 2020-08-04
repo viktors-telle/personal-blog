@@ -3,8 +3,7 @@ module.exports = {
     // edit below
     title: `Viktors Telle`,
     author: `Viktors Telle`,
-    description: `Viktors Telle personal website and blog. Viktors is system architect and full-stack developer with 12+ years of experience. My focus is primarily on developing applications using .NET Core and SPA frameworks like React and Angular. I am also experienced in setting up CI/CD pipelines in TeamCity, Octopus Deploy, and Azure
-    DevOps.`,
+    description: `My name is Viktors Telle, and I am a software developer from Latvia. I work in the industry for more than 12 years. I am a husband and father of the two beautiful kids. I am a family man, and since the Covid-19 outbreak started, I work from home, and together with my wife, take care of our kids.`,
     siteUrl: `https://viktorstelle.com`,
     social: {
       twitter: `ViktorsTelle`,
