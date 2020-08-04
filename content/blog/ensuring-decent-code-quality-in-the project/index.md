@@ -18,25 +18,25 @@ Code quality is the most important goal that you should pursue in your project. 
 
 The main benefit of writing unit tests is the confidence that your application will not break when making changes to its codebase.
 
-It does not matter, whether you choose xUnit, nUnit, or any other library. Strive for 100% coverage and enforce the minimum allowed code coverage by using a static code analyzer.
+Strive for 100% coverage and enforce the minimum allowed code coverage by using a static code analyzer.
 
 ## Static Code Analysis
 
-Static code analysis is the way to ensure the code meets the certain quality bar.
+Static code analysis is the way to ensure the code meets a certain quality bar.
 
 What are the benefits of static code analysis?
 
-First of all, it reduces the manual work for other developers during the code review.
+First of all, it reduces the manual work for other developers during the code review. Secondly, it provides a safety net.
 
 ## Code Reviews
 
-You can do the remote code reviews via Pull Requests. You can do the code review in two ways. Just to tick the checkbox (pressing Approve without even having a look) or you can do the thorough review. I have seen both approaches. It is clear that you should do thorough, otherwise it cannot be called code review at all.
+You can do the remote code reviews via Pull Requests. You can do the code review in two ways. By pressing the approve button without having a detailed look or you can do the thorough review. I have seen both approaches. It is clear that you should review the code thoroughly, otherwise it cannot be called code review at all.
 
 If possible also try to do the reviews in person.
 
 ## Automated CI/CD pipeline
 
-Use CI/CD tools like Azure DevOps, TeamCity, Jenkins, or others.
+Use CI/CD tools like Azure DevOps, TeamCity, Jenkins, or others. Builds should run automatically for the main branch and also for other branches, e.g. feature branches. Display the build status in the Pull Request and restrict merge if build fails.
 
 ## Automated tests
 
