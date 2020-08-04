@@ -36,7 +36,7 @@ If possible also try to do the reviews in person.
 
 ## Automated CI/CD pipeline
 
-Use CI/CD tools like Azure DevOps, TeamCity, Jenkins, or others. Builds should run automatically for the main branch and also for other branches, e.g. feature branches. Display the build status in the Pull Request and restrict merge if build fails.
+Use CI/CD tools like Azure DevOps, TeamCity, Jenkins, or others. Builds should run automatically for the main branch and also for other branches, e.g. feature branches. Display the build status in the Pull Request and restrict merge if build fails. You could also add the SonarQube pull request decoration and disallow to complete it if SonarQube quality gate fails.
 
 ## Automated tests
 
