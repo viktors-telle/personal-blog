@@ -40,4 +40,12 @@ Use CI/CD tools like Azure DevOps, TeamCity, Jenkins, or others. Builds should r
 
 ## Automated tests
 
-Selenium.
+Automated tests should provide you with even more confidence that new functionality did not break the existing one.
+
+If you are a .NET developer, then [SpecFlow](https://specflow.org/) is probably one of the best choices. SpecFlow is the #1 .NET open source framework for Behavior Driven Development, Acceptance Test Driven Development, and Specification by Example.
+
+Resources:
+
+https://specflow.org/
+
+https://www.selenium.dev/
