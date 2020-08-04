@@ -38,16 +38,18 @@ If possible also try to do the reviews in person.
 
 ## Automated CI/CD pipeline
 
-Use CI/CD tools like Azure DevOps, TeamCity, Jenkins, or others. Builds should run automatically for the main branch and also for other branches, e.g. feature branches. Display the build status in the Pull Request and restrict merge if build fails. You could also add the SonarQube pull request decoration and disallow to complete it if SonarQube quality gate fails.
+Use CI/CD tools like Azure DevOps, TeamCity, Jenkins, or others. Builds should run automatically for the main branch and also for other branches, e.g. feature branches. Display the build status in the Pull Request and restrict the merge if the build fails. You could also add the SonarQube pull request decoration and disallow to complete it if SonarQube quality gate fails.
 
 ## Automated tests
 
 Automated tests should provide you with even more confidence that new functionality did not break the existing one.
 
-If you are a .NET developer, then [SpecFlow](https://specflow.org/) is probably one of the best choices. SpecFlow is the #1 .NET open source framework for Behavior Driven Development, Acceptance Test Driven Development, and Specification by Example.
+If you are a .NET developer, then [SpecFlow](https://specflow.org/) is probably one of the best choices. SpecFlow is the #1 .NET open-source framework for Behavior Driven Development, Acceptance Test Driven Development, and Specification by Example.
 
 Resources:
 
 https://specflow.org/
 
 https://www.selenium.dev/
+
+https://www.sonarqube.org/
