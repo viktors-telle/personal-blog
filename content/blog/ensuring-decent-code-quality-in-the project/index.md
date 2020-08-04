@@ -24,11 +24,13 @@ If somebody says that writing unit tests is the waste of time, then run from tha
 
 ## Static Code Analysis
 
-Static code analysis is the way to ensure the code meets a certain quality bar. There are many tools on the market that provides this functionality. I have personally used [SonarQube](https://www.sonarqube.org/), and I very much like it.
+Static code analysis is the way to ensure the code meets a certain quality bar. There are many tools on the market that provides this functionality. I have personally used [SonarQube](https://www.sonarqube.org/), and I very much like it. It has a community edition, which you can use for free in both personal and commercial projects. The main drawback of the community edition is not able to analyze multiple  git branches at the same time.
 
 What are the benefits of static code analysis?
 
-First of all, it reduces the manual work for other developers during the code review. Secondly, it provides a safety net.
+First of all, it reduces the manual work for other developers during the code review. 
+
+Secondly, it provides a safety net. A static code analyzer will highlight the potential issues in your code.
 
 ## Code Reviews
 
@@ -45,6 +47,14 @@ Use CI/CD tools like Azure DevOps, TeamCity, Jenkins, or others. Builds should r
 Automated tests should provide you with even more confidence that new functionality did not break the existing one.
 
 If you are a .NET developer, then [SpecFlow](https://specflow.org/) is probably one of the best choices. SpecFlow is the #1 .NET open-source framework for Behavior Driven Development, Acceptance Test Driven Development, and Specification by Example.
+
+## Conclusion
+
+Apply these techniques and I am sure that your project overall code quality will increase.
+
+How do you ensure the code quality in your projects?
+
+Thanks for taking the time to read my article!
 
 Resources:
 
