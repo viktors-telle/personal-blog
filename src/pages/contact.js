@@ -9,6 +9,7 @@ const Contact = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Contact" />
+      <h1>Contact me</h1>
       <form
         class="email-form"
         name="contact"
