@@ -14,7 +14,7 @@ keywords:
 ---
 Code quality is the most important goal that you should pursue in your project. If neglected, it can cause a devastating effect in the long run. Your project becomes hard to maintain. Costs increase and the motivation of developers to work with such a project declines. In this article, I am going to show the ways how you can ensure better code quality in your codebase and make everyone happy.
 
-## Unit tests
+## Unit Tests
 
 The main benefit of writing unit tests is the confidence that your application will not break when making changes to its codebase.
 
@@ -24,7 +24,7 @@ If somebody says that writing unit tests is the waste of time, then run from tha
 
 ## Static Code Analysis
 
-Static code analysis is the way to ensure the code meets a certain quality bar. There are many tools on the market that provides this functionality. I have personally used [SonarQube](https://www.sonarqube.org/), and I very much like it. It has a Community edition, which you can use for free in both personal and commercial projects. The main drawback of the community edition is not able to analyze multiple git branches at the same time. Consider purchasing the Developer edition if you need per branch analysis.
+Static code analysis is the way to ensure the code meets a certain quality bar. There are many tools on the market that provides this functionality. I have personally used [SonarQube](https://www.sonarqube.org/), and I very much like it. It has a Community edition, which you can use for free in both personal and commercial projects. The main drawback of the community edition inability to analyze multiple git branches at the same time. Consider purchasing the Developer edition if you need per branch analysis. I have used Developer edition and so far it works great. Beware of one thing if you are planning to purchase Developer edition. SonarQube sales team is responding slowly and it took me almost 2 months to get the license from them.
 
 What are the benefits of static code analysis?
 
@@ -32,17 +32,19 @@ First of all, it reduces the manual work for other developers during the code re
 
 Secondly, it provides a safety net. A static code analyzer will highlight the potential issues in your code before these issues get to production.
 
+I recommend using SonarLint IDE plugin to catch potential issues before they are detected by SonarQube during the continuous integration (CI) process.
+
 ## Code Reviews
 
 You can do the code review in two ways. By pressing the approve button without having a detailed look or you can do the thorough review. I have seen both approaches. It is clear that you should review the code thoroughly, otherwise it cannot be called code review at all.
 
 You can do code reviews remotely or in person. Both approaches are good, but in-person code reviews have a slight edge.
 
-## Automated CI/CD pipeline
+## Automated CI/CD Pipeline
 
 Use CI/CD tools like [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/), [TeamCity](https://www.jetbrains.com/teamcity/), [Jenkins](https://www.jenkins.io/), or others. Builds should run automatically for the main branch and also for other branches, e.g. feature branches. Display the build status in the pull request and restrict the merge to the main branch if the build fails. You could also add the SonarQube pull request decoration and disallow to complete it if SonarQube quality gate fails. Cloud platforms such as Netlify provide the provisioning of the new environment for each pull request branch.
 
-## Automated tests
+## Automated Tests
 
 Automated tests should provide you with even more confidence that new functionality did not break the existing one.
 
