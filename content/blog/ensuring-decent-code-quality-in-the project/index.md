@@ -24,7 +24,7 @@ If somebody says that writing unit tests is the waste of time, then run from tha
 
 ## Static Code Analysis
 
-Static code analysis is the way to ensure the code meets a certain quality bar. There are many tools on the market that provides this functionality. I have personally used [SonarQube](https://www.sonarqube.org/), and I very much like it. It has a Community edition, which you can use for free in both personal and commercial projects. The main drawback of the community edition is not able to analyze multiple  git branches at the same time. Consider purchasing the Developer edition if you need per branch analysis.
+Static code analysis is the way to ensure the code meets a certain quality bar. There are many tools on the market that provides this functionality. I have personally used [SonarQube](https://www.sonarqube.org/), and I very much like it. It has a Community edition, which you can use for free in both personal and commercial projects. The main drawback of the community edition is not able to analyze multiple git branches at the same time. Consider purchasing the Developer edition if you need per branch analysis.
 
 What are the benefits of static code analysis?
 
@@ -40,7 +40,7 @@ You can do code reviews remotely or in person. Both approaches are good, but in-
 
 ## Automated CI/CD pipeline
 
-Use CI/CD tools like [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/), [TeamCity](https://www.jetbrains.com/teamcity/), [Jenkins](https://www.jenkins.io/), or others. Builds should run automatically for the main branch and also for other branches, e.g. feature branches. Display the build status in the pull request and restrict the merge to the main branch if the build fails. You could also add the SonarQube pull request decoration and disallow to complete it if SonarQube quality gate fails.
+Use CI/CD tools like [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/), [TeamCity](https://www.jetbrains.com/teamcity/), [Jenkins](https://www.jenkins.io/), or others. Builds should run automatically for the main branch and also for other branches, e.g. feature branches. Display the build status in the pull request and restrict the merge to the main branch if the build fails. You could also add the SonarQube pull request decoration and disallow to complete it if SonarQube quality gate fails. Cloud platforms such as Netlify provide the provisioning of the new environment for each pull request branch.
 
 ## Automated tests
 
