@@ -24,7 +24,7 @@ If somebody says that writing unit tests is the waste of time, then run from tha
 
 ## Static Code Analysis
 
-Static code analysis is the way to ensure the code meets a certain quality bar. Many tools on the market provide this functionality. I have personally used [SonarQube](https://www.sonarqube.org/), and I very much like it. It has a Community edition, which you can use for free in both personal and commercial projects. The main drawback of the community edition inability to analyze multiple git branches at the same time. Consider purchasing the Developer edition if you need per branch analysis. I have used Developer edition and so far it works great. Beware of one thing if you are planning to purchase Developer edition. SonarQube sales team is responding slowly and it took me almost 2 months to get the license from them.
+Static code analysis is the way to ensure the code meets a certain quality bar. Many tools on the market provide this functionality. I have personally used [SonarQube](https://www.sonarqube.org/), and I very much like it. It has a Community edition, which you can use for free in both personal and commercial projects. The main drawback of the community edition inability to analyze multiple git branches at the same time. Consider purchasing the Developer edition if you need per branch analysis. I have used Developer edition and so far it works great. Beware of one thing if you are planning to purchase Developer edition. SonarQube sales team is responding slowly, and it took me almost 2 months to get the license from them.
 
 What are the benefits of static code analysis?
 
@@ -36,9 +36,9 @@ I recommend using [SonarLint IDE](https://www.sonarlint.org/) plugin to catch po
 
 ## Code Reviews
 
-You can do the code review in two ways. By pressing the approve button without having a detailed look or you can do the thorough review. I have seen both approaches. You should review the code thoroughly, otherwise, it cannot be called code review at all.
+You can do the code review in two ways. One way is to press the approve button without having a detailed look. Another way is a thorough review. I have seen both approaches. You should review the code thoroughly, otherwise, it cannot be called code review at all.
 
-You can do code reviews remotely or in person. Both approaches are good, but in-person code reviews have a slight edge.
+You can do code reviews remotely or in person. Both approaches are good, but in-person code reviews have a slight edge because you can immediately provide the feedback and explain the findings in more detail.
 
 ## Automated CI/CD Pipeline
 
