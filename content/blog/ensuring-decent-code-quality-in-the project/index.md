@@ -28,11 +28,11 @@ Static code analysis is the way to ensure the code meets a certain quality bar. 
 
 What are the benefits of static code analysis?
 
-First of all, it reduces the manual work for other developers during the code review.
+* First of all, it reduces the manual work for other developers during the code review.
+* Secondly, it provides a safety net. A static code analyzer will highlight the potential issues in your code before these issues get to production.
+* Also, it helps you to manage the technical debt. You can analyze older projects, and see how much technical debt is at hand.
 
-Secondly, it provides a safety net. A static code analyzer will highlight the potential issues in your code before these issues get to production.
-
-I recommend using SonarLint IDE plugin to catch potential issues before they are detected by SonarQube during the continuous integration (CI) process. You can use it in your favorite IDE such as Eclipse, IntelliJ IDEA, Visual Studio, VS Code.
+I recommend using [SonarLint IDE](https://www.sonarlint.org/) plugin to catch potential issues before they are detected by SonarQube during the continuous integration (CI) process. You will see the issues as you type. You can use it in your favorite IDE such as Eclipse, IntelliJ IDEA, Visual Studio, VS Code.
 
 ## Code Reviews
 
