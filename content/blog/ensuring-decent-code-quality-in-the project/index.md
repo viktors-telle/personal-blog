@@ -68,17 +68,11 @@ Automated tests should be executed automatically as part of your CI pipeline.
 
 Apply these techniques, and I am sure that your project overall code quality will increase.
 
-How do you ensure the code quality in your projects?
+How do you ensure the code quality in your projects? Please share your thought in the comments section.
 
 Thanks for taking the time to read my article!
 
 ### Resources:
-
-https://specflow.org/
-
-https://www.selenium.dev/
-
-https://www.sonarqube.org/
 
 https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis
 
@@ -88,6 +82,22 @@ https://nunit.org/
 
 https://xunit.net/
 
-https://www.netlify.com/blog/2016/07/20/introducing-deploy-previews-in-netlify/
+https://www.sonarqube.org/
+
+https://www.sonarlint.org/
+
+https://azure.microsoft.com/en-us/services/devops/
+
+https://www.jetbrains.com/teamcity/
+
+https://www.jenkins.io/
 
 https://docs.sonarqube.org/latest/user-guide/quality-gates/
+
+https://www.netlify.com/blog/2016/07/20/introducing-deploy-previews-in-netlify/
+
+https://specflow.org/
+
+https://www.selenium.dev/
+
+https://www.selenium.dev/documentation/en/webdriver/
