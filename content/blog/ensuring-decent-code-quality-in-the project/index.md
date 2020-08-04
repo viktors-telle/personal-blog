@@ -16,9 +16,13 @@ Code quality is the most important goal that you should pursue in your project. 
 
 ## Unit Tests
 
-The main benefit of writing unit tests is the confidence that your application will not break when making changes to its codebase. Strive for 100% coverage and enforce the minimum allowed code coverage by using a [static code analyzer](https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis). If unit coverage is not sufficient, then do not allow completing the pull request. Developers are lazy and sometimes applying strict rules is the only way to ensure that unit tests are written.
+The main benefit of writing unit tests is the confidence that your application will not break when making changes to its codebase. Strive for 100% coverage, and enforce the minimum allowed code coverage by using a [static code analyzer](https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis). If unit coverage is not sufficient, then do not allow completing the pull request. Developers are lazy and sometimes applying strict rules is the only way to ensure that unit tests are written.
 
-If somebody says that writing unit tests is the waste of time, then run from that person as fast as you can.
+If somebody says that writing unit tests is the waste of time, then run from that person as fast as you can. Never compromise on the quality because it can backfire on you later.
+
+If you are a front-end developer, you can you [Jest](https://jestjs.io/), which is a JavaScript unit testing framework. I have tried it in Angular and React projects, and it works really well.
+
+For projects based on .NET, you can use either [nUnit](https://nunit.org/) or [xUnit](https://xunit.net/). Both of them are great, but I personally prefer xUnit.
 
 ## Static Code Analysis
 
@@ -36,11 +40,15 @@ I recommend using [SonarLint IDE](https://www.sonarlint.org/) plugin to catch po
 
 You can do the code review in two ways. One way is to press the approve button without having a detailed look. Another way is a thorough review. I have seen both approaches. You should review the code thoroughly, otherwise, it cannot be called code review at all.
 
-You can do code reviews remotely or in person. Both approaches are good, but in-person code reviews have a slight edge because you can immediately provide the feedback and explain the findings in more detail.
+You can do code reviews remotely or in person. Both approaches are good, but in-person code reviews have a slight edge because you can immediately provide the feedback and explain the findings in more detail. Also, you can bond with the person better.
+
+Everyone in the team should participate in the code reviews. It does not matter if you are a junior or senior developer. Junior developers can suprise you sometimes.
 
 ## Automated CI/CD Pipeline
 
-Use CI/CD tools like [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/), [TeamCity](https://www.jetbrains.com/teamcity/), [Jenkins](https://www.jenkins.io/), or others. Builds should run automatically for the main branch and also for other branches, e.g. feature branches. Display the build status in the pull request and restrict the merge to the main branch if the build fails. You could also add the SonarQube pull request decoration and disallow to complete it if SonarQube quality gate fails. Cloud platforms such as Netlify provide the provisioning of the new environment for each pull request branch.
+Use CI/CD tools like [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/), [TeamCity](https://www.jetbrains.com/teamcity/), [Jenkins](https://www.jenkins.io/), or others. Builds should run automatically for the main branch and also for other branches, e.g. feature branches. Display the build status in the pull request and restrict the merge to the main branch if the build fails. You could also add the SonarQube pull request decoration and disallow to complete it if SonarQube quality gate fails.
+
+Cloud platforms such as Netlify provide the provisioning of the new environment for each pull request branch.
 
 ## Automated Tests
 
@@ -48,13 +56,13 @@ Use CI/CD tools like [Azure DevOps](https://azure.microsoft.com/en-us/services/d
 
 ## Conclusion
 
-Apply these techniques and I am sure that your project overall code quality will increase.
+Apply these techniques, and I am sure that your project overall code quality will increase.
 
 How do you ensure the code quality in your projects?
 
 Thanks for taking the time to read my article!
 
-Resources:
+### Resources:
 
 https://specflow.org/
 
@@ -63,3 +71,9 @@ https://www.selenium.dev/
 https://www.sonarqube.org/
 
 https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis
+
+https://jestjs.io/
+
+https://nunit.org/
+
+https://xunit.net/
