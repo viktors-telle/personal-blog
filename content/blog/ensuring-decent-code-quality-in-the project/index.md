@@ -12,13 +12,11 @@ keywords:
   - Quality Software
   - .NET
 ---
-Code quality is the most important goal that you should pursue in your project. If neglected, it can cause a devastating effect in the long run. Your project becomes hard to maintain. Costs increase and the motivation of developers to work with such a project declines. In this article, I am going to show the ways how you can ensure better code quality in your codebase and make everyone happy.
+Code quality is the most important goal that you should pursue in your project. If neglected, it can cause a devastating effect in the long run. Your project becomes hard to maintain. Costs increase and the motivation of developers to work with such a project declines. In this article, I am going to describe the ways how you can ensure better code quality in your codebase.
 
 ## Unit Tests
 
-The main benefit of writing unit tests is the confidence that your application will not break when making changes to its codebase.
-
-Strive for 100% coverage and enforce the minimum allowed code coverage by using a static code analyzer. If unit coverage is not sufficient, then do not allow completing the pull request. Developers are lazy and sometimes applying strict rules is the only way to ensure that unit tests are written.
+The main benefit of writing unit tests is the confidence that your application will not break when making changes to its codebase. Strive for 100% coverage and enforce the minimum allowed code coverage by using a [static code analyzer](https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis). If unit coverage is not sufficient, then do not allow completing the pull request. Developers are lazy and sometimes applying strict rules is the only way to ensure that unit tests are written.
 
 If somebody says that writing unit tests is the waste of time, then run from that person as fast as you can.
 
@@ -63,3 +61,5 @@ https://specflow.org/
 https://www.selenium.dev/
 
 https://www.sonarqube.org/
+
+https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis
