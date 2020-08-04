@@ -60,7 +60,7 @@ Automated tests should provide you with even more confidence that new functional
 
 If you are a .NET developer, then [SpecFlow](https://specflow.org/) is probably one of the best choices. SpecFlow is the #1 .NET open-source framework for Behavior Driven Development, Acceptance Test Driven Development, and Specification by Example.
 
-To run the SpecFlow scenarios, you need an engine.
+To run the SpecFlow scenarios, you need an engine. Selenium goes hand in hand with SpecFlow and allows you to run the SpecFlow scenarios.
 
 ## Conclusion
 
