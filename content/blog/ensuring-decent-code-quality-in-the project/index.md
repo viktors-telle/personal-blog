@@ -1,6 +1,6 @@
 ---
 title: Ways to ensure decent code quality in the project
-date: 2020-08-03T03:23:14.484Z
+date: 2020-08-04T03:23:14.484Z
 description: Code quality is the most important goal that you should pursue in
   your project. If neglected, it can cause a devastating effect in the long run.
   Your project becomes hard to maintain. Costs increase and the motivation of
@@ -24,19 +24,19 @@ If somebody says that writing unit tests is the waste of time, then run from tha
 
 ## Static Code Analysis
 
-Static code analysis is the way to ensure the code meets a certain quality bar. There are many tools on the market that provides this functionality. I have personally used [SonarQube](https://www.sonarqube.org/), and I very much like it. It has a Community edition, which you can use for free in both personal and commercial projects. The main drawback of the community edition inability to analyze multiple git branches at the same time. Consider purchasing the Developer edition if you need per branch analysis. I have used Developer edition and so far it works great. Beware of one thing if you are planning to purchase Developer edition. SonarQube sales team is responding slowly and it took me almost 2 months to get the license from them.
+Static code analysis is the way to ensure the code meets a certain quality bar. Many tools on the market provide this functionality. I have personally used [SonarQube](https://www.sonarqube.org/), and I very much like it. It has a Community edition, which you can use for free in both personal and commercial projects. The main drawback of the community edition inability to analyze multiple git branches at the same time. Consider purchasing the Developer edition if you need per branch analysis. I have used Developer edition and so far it works great. Beware of one thing if you are planning to purchase Developer edition. SonarQube sales team is responding slowly and it took me almost 2 months to get the license from them.
 
 What are the benefits of static code analysis?
 
-First of all, it reduces the manual work for other developers during the code review. 
+First of all, it reduces the manual work for other developers during the code review.
 
 Secondly, it provides a safety net. A static code analyzer will highlight the potential issues in your code before these issues get to production.
 
-I recommend using SonarLint IDE plugin to catch potential issues before they are detected by SonarQube during the continuous integration (CI) process.
+I recommend using SonarLint IDE plugin to catch potential issues before they are detected by SonarQube during the continuous integration (CI) process. You can use it in your favorite IDE such as Eclipse, IntelliJ IDEA, Visual Studio, VS Code.
 
 ## Code Reviews
 
-You can do the code review in two ways. By pressing the approve button without having a detailed look or you can do the thorough review. I have seen both approaches. It is clear that you should review the code thoroughly, otherwise it cannot be called code review at all.
+You can do the code review in two ways. By pressing the approve button without having a detailed look or you can do the thorough review. I have seen both approaches. You should review the code thoroughly, otherwise, it cannot be called code review at all.
 
 You can do code reviews remotely or in person. Both approaches are good, but in-person code reviews have a slight edge.
 
@@ -46,9 +46,7 @@ Use CI/CD tools like [Azure DevOps](https://azure.microsoft.com/en-us/services/d
 
 ## Automated Tests
 
-Automated tests should provide you with even more confidence that new functionality did not break the existing one.
-
-If you are a .NET developer, then [SpecFlow](https://specflow.org/) is probably one of the best choices. SpecFlow is the #1 .NET open-source framework for Behavior Driven Development, Acceptance Test Driven Development, and Specification by Example.
+Use CI/CD tools like [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/), [TeamCity](https://www.jetbrains.com/teamcity/), [Jenkins](https://www.jenkins.io/), or others. Builds should run automatically for the main branch and also for other branches, e.g. feature branches. Display the build status in the pull request and restrict the merge to the main branch if the build fails. You could also add the SonarQube pull request decoration and disallow to complete it if SonarQube quality gate fails. Cloud platforms such as Netlify provide the provisioning of the new environment for each pull request branch.
 
 ## Conclusion
 
