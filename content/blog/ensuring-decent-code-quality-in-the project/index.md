@@ -38,11 +38,11 @@ I recommend using [SonarLint IDE](https://www.sonarlint.org/) plugin to catch po
 
 ## Code Reviews
 
-You can do the code review in two ways. One way is to press the approve button without having a detailed look. Another way is a thorough review. I have seen both approaches. You should review the code thoroughly, otherwise, it cannot be called code review at all.
+Establish a code review practice for every change you make in the codebase. Once you establish that, you can do the code review in two ways. One way is to press the approve button without having a detailed look. Another way is a thorough review. I have seen both approaches. You should review the code thoroughly, otherwise, it cannot be called code review at all.
 
 You can do code reviews remotely or in person. Both approaches are good, but in-person code reviews have a slight edge because you can immediately provide the feedback and explain the findings in more detail. Also, you can bond with the person better.
 
-Everyone in the team should participate in the code reviews. It does not matter if you are a junior or senior developer. Junior developers can suprise you sometimes.
+Everyone in the team should participate in the code reviews. It does not matter if you are a junior or senior developer. Junior developers can also contribute a lot and quite often suprise you in a good way.
 
 ## Automated CI/CD Pipeline
 
@@ -50,9 +50,17 @@ Use CI/CD tools like [Azure DevOps](https://azure.microsoft.com/en-us/services/d
 
 Consider automatic provisioning of the new environment for each pull request branch. Cloud platforms such as Netlify provide the creation of the new environment for each pull request branch. In Netlify this feature is called [Deploy Previews](https://www.netlify.com/blog/2016/07/20/introducing-deploy-previews-in-netlify/).
 
+Ideally, deploys should be fully automated. Production can be an exception to that, but not always. One way to automate the deployment is to set up deployment triggers based on branch names. For example, dev branch is deployed to a dev environment, release branch to staging environment, and merge to master branch can trigger the deployment to production. 
+
+Tools such as Octopus Deploy provide the possibility to schedule deployment to a particular time. I encourage you to build an infrastructure that allows you to perform zero-downtime deployments. Then you also can automate the deployments and deploy every feature to the production automatically.
+
 ## Automated Tests
 
-Use CI/CD tools like [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/), [TeamCity](https://www.jetbrains.com/teamcity/), [Jenkins](https://www.jenkins.io/), or others. Builds should run automatically for the main branch and also for other branches, e.g. feature branches. Display the build status in the pull request and restrict the merge to the main branch if the build fails. You could also add the SonarQube pull request decoration, and disallow to complete it if SonarQube quality gate fails.
+Automated tests should provide you with even more confidence that new functionality did not break the existing one.
+
+If you are a .NET developer, then [SpecFlow](https://specflow.org/) is probably one of the best choices. SpecFlow is the #1 .NET open-source framework for Behavior Driven Development, Acceptance Test Driven Development, and Specification by Example.
+
+To run the SpecFlow scenarios, you need an engine.
 
 ## Conclusion
 
