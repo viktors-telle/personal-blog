@@ -46,9 +46,9 @@ Everyone in the team should participate in the code reviews. It does not matter 
 
 ## Automated CI/CD Pipeline
 
-Use CI/CD tools like [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/), [TeamCity](https://www.jetbrains.com/teamcity/), [Jenkins](https://www.jenkins.io/), or others. Builds should run automatically for the main branch and also for other branches, e.g. feature branches. Display the build status in the pull request and restrict the merge to the main branch if the build fails. You could also add the SonarQube pull request decoration and disallow to complete it if SonarQube quality gate fails.
+Use CI/CD tools like [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/), [TeamCity](https://www.jetbrains.com/teamcity/), [Jenkins](https://www.jenkins.io/), or others. Builds should run automatically for the main branch and also for other branches, e.g. feature branches. Display the build status in the pull request and restrict the merge to the main branch if the build fails. You could also add the SonarQube pull request decoration and disallow to complete it if SonarQube [quality gate](https://docs.sonarqube.org/latest/user-guide/quality-gates/) fails.
 
-Cloud platforms such as Netlify provide the provisioning of the new environment for each pull request branch.
+Consider automatic provisioning of the new environment for each pull request branch. Cloud platforms such as Netlify provide the creation of the new environment for each pull request branch. In Netlify this feature is called [Deploy Previews](https://www.netlify.com/blog/2016/07/20/introducing-deploy-previews-in-netlify/).
 
 ## Automated Tests
 
@@ -77,3 +77,7 @@ https://jestjs.io/
 https://nunit.org/
 
 https://xunit.net/
+
+https://www.netlify.com/blog/2016/07/20/introducing-deploy-previews-in-netlify/
+
+https://docs.sonarqube.org/latest/user-guide/quality-gates/
