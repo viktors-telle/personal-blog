@@ -34,13 +34,13 @@ Secondly, it provides a safety net. A static code analyzer will highlight the po
 
 ## Code Reviews
 
-You can do the remote code reviews via Pull Requests. You can do the code review in two ways. By pressing the approve button without having a detailed look or you can do the thorough review. I have seen both approaches. It is clear that you should review the code thoroughly, otherwise it cannot be called code review at all.
+You can do the code review in two ways. By pressing the approve button without having a detailed look or you can do the thorough review. I have seen both approaches. It is clear that you should review the code thoroughly, otherwise it cannot be called code review at all.
 
-If possible also try to do the reviews in person.
+You can do code reviews remotely or in person. Both approaches are good, but in-person code reviews have a slight edge.
 
 ## Automated CI/CD pipeline
 
-Use CI/CD tools like Azure DevOps, TeamCity, Jenkins, or others. Builds should run automatically for the main branch and also for other branches, e.g. feature branches. Display the build status in the Pull Request and restrict the merge if the build fails. You could also add the SonarQube pull request decoration and disallow to complete it if SonarQube quality gate fails.
+Use CI/CD tools like [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/), [TeamCity](https://www.jetbrains.com/teamcity/), [Jenkins](https://www.jenkins.io/), or others. Builds should run automatically for the main branch and also for other branches, e.g. feature branches. Display the build status in the pull request and restrict the merge to the main branch if the build fails. You could also add the SonarQube pull request decoration and disallow to complete it if SonarQube quality gate fails.
 
 ## Automated tests
 
