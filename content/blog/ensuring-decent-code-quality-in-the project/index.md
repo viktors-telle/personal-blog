@@ -17,7 +17,7 @@ Code quality is the most important goal that you should pursue in your project. 
 
 ### Unit Tests
 
-The main benefit of writing unit tests is the confidence that your application will not break when making changes to its codebase. Strive for 100% coverage, and enforce the least allowed code coverage by using a [static code analyzer](https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis). If unit coverage is not enough, then do not allow completing the pull request. Developers are lazy, and sometimes applying strict rules is the only way to ensure that unit tests are written.
+The main benefit of writing unit tests is the confidence that your application will not break when making changes to its codebase. Strive for 100% coverage, and enforce the least allowed code coverage by using a [static code analyzer](https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis). If unit coverage is not enough, do not allow completing the pull request. Developers are lazy, and sometimes applying strict rules is the only way to ensure that unit tests are written.
 
 If somebody says that writing unit tests is the waste of time, then run from that person as fast as you can. Never compromise on the quality because it can backfire on you later.
 
