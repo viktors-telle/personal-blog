@@ -58,10 +58,10 @@ This podcast was founded in 2014 by HTML W3C invited expert Erik Isaksen. It cov
 
 ![AskPat 2.0](ask-pat.png "AskPat 2.0")
 
-When it comes to entrepreneurship podcast by Pat Flynn is the best. This podcast comes out every day. Pat answers one question asked by one of his listeners. Questions like: 
+When it comes to entrepreneurship podcast by Pat Flynn is the best. This podcast comes out every day. Pat answers one question asked by one of his listeners. Questions like:
 
 * How to create the best "About" page on your website?
-* How to increase engagement and participation in your community? 
+* How to increase engagement and participation in your community?
 * How do you handle negative reviews?
 
 These and many more questions get answered during the show and help you and your business to perform better. Probably later I will also listen to another Pat Flynn's podcast: "[The Smart Passive Income Online Business and Blogging Podcast](https://open.spotify.com/show/7wjv5MRCXWXImqTFhcufLy?si=EK4-SNgZRi6OrHW_NOYNdw)".
