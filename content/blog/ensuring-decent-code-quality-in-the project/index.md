@@ -12,6 +12,7 @@ keywords:
   - Static Code Analysis
   - Quality Software
   - .NET
+thumbnail: sonarqube-analysis-result.png
 ---
 Code quality is the most important goal that you should pursue in your project. If neglected, it can cause a devastating effect in the long run. Your project becomes hard to maintain. Costs increase, and the motivation of developers to work with such a project declines. In this article, I am going to describe the ways how you can ensure better code quality in your codebase.
 
