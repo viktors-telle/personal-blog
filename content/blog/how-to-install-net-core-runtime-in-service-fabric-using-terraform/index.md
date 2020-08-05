@@ -1,5 +1,5 @@
 ---
-title: "How to Install\_.Net Core Runtime in Service Fabric Using Terraform"
+title: "How To Install\_.Net Core Runtime In Service Fabric Using Terraform"
 description: We have decided to install .NET Core runtime in the Azure Service Fabric cluster to reduce the package size deployed to the cluster. We already had Terraform templates for Virtual Machine Scale Sets.
 date: '2020-07-04T13:38:13.504Z'
 keywords: ["Net Core", "Service Fabric", "Powershell", "Terraform", "Azure"]
@@ -11,7 +11,7 @@ canonical: https://medium.com/swlh/how-to-install-net-core-runtime-in-service-fa
 
 In this article, I am going to share my own experience and thought process since I could not find existing tutorials on how to do that. Recently, we have decided to install .NET Core runtime in the Service Fabric cluster to reduce the package size deployed to the cluster. It should reduce the deployment time for many .NET Core applications. Currently, we are using self-contained deployments, which result in deploying large packages that take a long time.
 
-### First attempt
+## First Attempt
 
 In the beginning, I thought that this is a straightforward task to do, but I was so wrong. Why did I think that this is going to be easy? Well, we already had Terraform templates for the [Service Fabric cluster](https://www.terraform.io/docs/providers/azurerm/r/service_fabric_cluster.html) and [Virtual Machine Scale Sets](https://www.terraform.io/docs/providers/azurerm/r/virtual_machine_scale_set.html) (VMSS). We also had the .NET Framework 4.8 installation on VMSS via Powershell (.ps1) script added to the Terraform template as an extension to the VMSS.
 
@@ -35,7 +35,7 @@ extension {
 
 First, I decided to look for a .ps1 script that could install the runtime non-interactively. It turned out that Microsoft already had such a [script](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-install-script#recommended-version). I thought, great let me download it and add to the existing Terraform VMSS configuration as an additional extension. I did that and the result looked good, so I created a Pull Request (PR). My coworkers reviewed it, and also Terraform validation passed. After completing the PR, the feature branch was merged to the dev branch, and automatic deployment started to the dev environment. As you might probably guess, it did not work quite well. Unfortunately, Azure does not support many extensions of the same type.
 
-### Second attempt
+## Second Attempt
 
 All right, not a big deal, I will add this logic to the existing extension, which installs .NET Framework 4.8. I used the pipe operator to combine multiple .ps1 commands.
 
@@ -64,7 +64,7 @@ powershell -ExecutionPolicy Unrestricted -File InstallDotNet-48.ps1 && powershel
 
 This time the deployment finished successfully, but there was another issue to solve.
 
-### Third attempt
+## Third Attempt
 
 It turned out that .NET Core apps expect the runtime to be in `C:\Program Files\dotnet` directory, but the .NET Core .ps1 installation script installs the runtime in the user profile folder by default.
 
@@ -95,7 +95,7 @@ extension {
 
 And this finally worked! My colleague made sure that it works by deploying the .NET Core app without passing `--self-contained true` parameter to the `dotnet publish` command.
 
-### Conclusion
+## Conclusion
 
 Installing the .NET Core runtime in the Service Fabric cluster turned out to be not so straight forward task as it seemed in the beginning. The main reason is the lack of documentation and examples on how to do it via Terraform templates. Thanks for reading!
 

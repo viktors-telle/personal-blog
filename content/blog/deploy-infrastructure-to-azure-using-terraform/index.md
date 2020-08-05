@@ -1,5 +1,5 @@
 ---
-title: Deploy your infrastructure to Azure using Terraform
+title: Deploy Your Infrastructure To Azure Using Terraform
 description:
  I will share my experience of migrating from ARM to Terraform, how to organize project structure, and the pros and cons of using Terraform.
 date: '2020-03-04T20:48:34.226Z'
@@ -12,7 +12,7 @@ canonical: https://medium.com/swlh/deploy-infrastructure-to-azure-using-terrafor
 
 First of all, what is [Terraform](https://www.terraform.io/)? It is a great tool to describe your cloud infrastructure in the code (IaC) in a declarative way. The main benefit of using this approach is that you will be able to reproduce your infrastructure easily if something goes wrong. It also enables versioning and control over the changes you will make to the infrastructure. In this article, I am going to describe my own experience with Terraform while building infrastructure in Azure.
 
-### A great alternative to the ARM template
+## A Great Alternative To The ARM Template
 
 In the past [ARM](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) template was the standard way to define infrastructure in Azure. ARM provided a way of describing infrastructure declaratively in JSON format. However, it has its downsides. I will list the most important ones to me:
 
@@ -20,7 +20,7 @@ In the past [ARM](https://docs.microsoft.com/en-us/azure/azure-resource-manager/
 * Lack of resource validation before applying the changes to the real infrastructure.
 * Steep learning curve.
 
-### Terraform to the rescue
+## Terraform To The Rescue
 
 One day colleague of mine suggested trying Terraform as a potential replacement for the ARM templates. We already had quite a few ARM templates defined for existing infrastructure, but it was cumbersome to maintain them. There was a new project about to start and so I decided to give Terraform a shot.
 
@@ -95,7 +95,7 @@ Here is the example of the same Storage Account definition using ARM template.
 
 After seeing such a huge difference in the amount of configuration that needs to be written, I decided to continue exploring Terraform.
 
-### Managing configuration for multiple environments
+## Managing Configuration For Multiple Environments
 
 This was the thing that I struggled with the most. How the heck I should organize the configuration to support configuration for different environments?
 
@@ -113,7 +113,7 @@ When using such a structure, you can execute `terraform plan` command and specif
 
 You can examine the project structure in the GitHub repo: [https://github.com/viktors-telle/terraform](https://github.com/viktors-telle/terraform)
 
-### Using modules
+## Using Modules
 
 The module is an excellent way to unify multiple resource definitions that are used together. The module `sql-server` contains definitions of the Azure SQL Server, Azure SQL Server firewall rules, and Azure SQL Elastic Pool.
 
@@ -132,7 +132,7 @@ module "sql-server" {
 }
 ```
 
-### Storing secrets
+## Storing Secrets
 
 Never store sensitive data in the code repository. Arguably you can store sensitive data for the development environment to ease up onboarding of the new team members, but only when you use a private repository.
 
@@ -164,7 +164,7 @@ terraform plan
 
 `${storage_account_access_key}` and `azure_client_secret` values can be passed as the parameters from the Azure Key Vault, for example.
 
-### Pros and cons
+## Pros And Cons
 
 Terraform is not perfect, and has some downsides. I have listed some pros and cons that are important to me.
 
@@ -180,7 +180,7 @@ Terraform is not perfect, and has some downsides. I have listed some pros and co
 * `terraform import` command is lacking the generation of the actual resource configuration. Currently, it supports only importing existing state into state file that helps a bit, but not too much if you have a large infrastructure.
 * Not all resources can be described via Terraform.
 
-### Final words
+## Final Words
 
 Currently, I am finalizing the migration of existing infrastructure described using ARM templates to Terraform. Terraform has proven to be convenient to use on a broader scale. Unfortunately, there is no straightforward way to replace ARM templates with Terraform templates since, at the moment of writing, Azure does not support exporting the existing resources in HCL format. To reduce manual work of translating ARM JSON to HCL, I have written a tool in C# that performs naive conversion of Terraform state file (created by the `terraform import` command) to HCL resource configuration.
 

@@ -1,5 +1,5 @@
 ---
-title: 4 approaches on how to create reliable messaging architecture
+title: 4 Approaches On How To Create Reliable Messaging Architecture
 description:
   In this article, I am going to describe how to implement error handling using the RabbitMQ and MassTransit library in messaging architecture. It will make your data handling pipeline more resilient and reliable.
 date: '2020-06-14T19:02:51.588Z'
@@ -24,7 +24,7 @@ Here are some prerequisites before you can successfully run the sample code used
 
 Also, this article assumes you have knowledge of C# and basic knowledge of RabbitMQ, MassTransit, and MongoDB.
 
-### First-level retries
+## First-level Retries
 
 Imagine, one of the services you are integrated with becomes unavailable for a couple of minutes. You will most likely get service unavailable exception while the call is made to that particular service. Probably that should not cause immediate failure to the message handling because the message will be moved to the error queue, and who wants to handle potentially huge amounts of messages manually, right? First-level retries are life saviors in these types of situations.
 
@@ -92,7 +92,7 @@ I have created a simple .NET Core console application to show the configuration
 
 You can read more about first-level retries in the [MassTransit documentation](https://masstransit-project.com/usage/exceptions.html#retry).
 
-### Second-level (redelivery) retries
+## Second-level (Redelivery) Retries
 
 These retries are particularly useful when you have integrations with other systems, and those systems can potentially be unavailable due to various reasons for a longer period. Your application should be tolerant against such situations and not immediately send the message to the error queue. Error queue is the last resort in the message handling pipeline.
 
@@ -177,7 +177,7 @@ After enabling it and launching the application, a new exchange is created (see 
 
 You can read more about the redelivery in [MassTransit documentation](https://masstransit-project.com/usage/exceptions.html#redelivery). When you run the updated application, you will notice that first-level retries are executed in the beginning, and only then redelivery kicks in for the messages that were not handled successfully during first-level retries. In this example, messages will eventually appear in the error queue because the exception is thrown all the time. Redelivery will not help in this case.
 
-#### Do not retry certain exceptions
+### Do Not Retry Certain Exceptions
 
 You might have situations when specific types of exceptions should be ignored during the execution of either the first or the second-level retries. For example, the message should not be retried if it fails some specific validation. Fortunately, MassTransit provides such functionality, and it is called [Exception filters](https://masstransit-project.com/usage/exceptions.html#exception-filters). You can either ignore certain exceptions or retry only specific ones.
 
@@ -266,7 +266,7 @@ I have added this line of code in two places compared to the previous example.
 
 This tells us to ignore retrying `NameTooShortException` for both first and second-level retries.
 
-### Message idempotency
+## Message Idempotency
 
 Here is the definition of idempotence from [Wikipedia](https://en.wikipedia.org/wiki/Idempotence):
 
@@ -283,7 +283,7 @@ To avoid duplicate notification sending, e.g., email or SMS, you need to save th
 
 Apply this pattern in all places on the consumer side, and you will be able to handle the same message infinite times.
 
-### Message outbox
+## Message Outbox
 
 Another way to improve the reliability of messaging is to use the message outbox on the producer (publisher) side. Message outbox is a great approach to deal with situations when you lose connection to the RabbitMQ. You want to send the message to the consumer anyway without failing the user action.
 
@@ -480,7 +480,7 @@ namespace MessageOutbox.Consumer
 }
 ```
 
-### Conclusions
+## Conclusions
 
 The approaches described here are battle-tested in the production environment and work quite well. Message redelivery, idempotency, and outbox reduced the manual work for the support engineers and made our services more stable and resilient against various errors.
 
