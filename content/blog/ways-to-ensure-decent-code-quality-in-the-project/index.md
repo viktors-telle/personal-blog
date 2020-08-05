@@ -12,7 +12,6 @@ keywords:
   - Static Code Analysis
   - Quality Software
   - .NET
-thumbnail: sonarqube-analysis-result.png
 ---
 
 ![SonarQube Quality Metrics (https://www.sonarqube.org/)](sonarqube-analysis-result.png)
