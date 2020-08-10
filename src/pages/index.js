@@ -14,16 +14,15 @@ class IndexPage extends React.Component {
         <SEO
           title="Home"
           keywords={[
-            `Blog`,
-            `Personal experience`,
+            `Viktors Telle`,
+            `Personal blog`,
+            `Personal website`,
             `Software development`,
             `C#`,
             `.NET`,
             `DevOps`,
             `React`,
             `Clean code`,
-            `Family man`,
-            `Viktors Telle`,
           ]}
         />
         <MainPhoto />
