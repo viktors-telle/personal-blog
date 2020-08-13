@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 import { DiscussionEmbed, CommentCount } from "disqus-react"
 import styled from "styled-components"
+import ScrollToTopButton from "../components/ScrollToTopButton"
 
 const PostNavigation = styled.ul`
   display: flex;
@@ -92,6 +93,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           ])}
         </p>
       </article>
+      <ScrollToTopButton />
       <nav>
         <PostNavigation>
           <li>
