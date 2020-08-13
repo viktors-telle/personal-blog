@@ -45,16 +45,13 @@ class IndexPage extends React.Component {
           a big fan of clean code, best practices, and quality software.
         </p>
         <p>
-          I write a{" "}
-          <Link style={{ color: `black` }} to="/blog/">
-            blog
-          </Link>{" "}
-          where I share my work experience and try to help people to learn from
-          my mistakes. It is known for a fact that the fastest and the best way
-          to learn is to learn from someone else's mistakes and experiences. I
-          also share the best practices in software development. Besides writing
-          and spending time with my kids, I also study the finances and
-          entrepreneurship by reading books and listening to various podcasts.
+          I write a <Link to="/blog/">blog</Link> where I share my work
+          experience and try to help people to learn from my mistakes. It is
+          known for a fact that the fastest and the best way to learn is to
+          learn from someone else's mistakes and experiences. I also share the
+          best practices in software development. Besides writing and spending
+          time with my kids, I also study the finances and entrepreneurship by
+          reading books and listening to various podcasts.
         </p>
       </Layout>
     )

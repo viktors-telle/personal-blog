@@ -5,3 +5,7 @@ ul > li {
 .gatsby-resp-image-figcaption {
   text-align: center;
 }
+
+a {
+  color: black;
+}
