@@ -1,5 +1,5 @@
 ul > li {
-  margin-left: 30px;
+  margin-left: 1.75rem;
 }
 
 .gatsby-resp-image-figcaption {
@@ -8,4 +8,10 @@ ul > li {
 
 a {
   color: black;
+}
+
+@media (max-width: 480px) {
+  ul > li {
+    margin-left: 0px;
+  }
 }

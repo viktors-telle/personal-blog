@@ -13,6 +13,7 @@ const PostNavigation = styled.ul`
   justify-content: space-between;
   list-style: none;
   padding: 0;
+  margin-left: 0px;
 
   li {
     max-width: 300px;
