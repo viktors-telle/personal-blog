@@ -37,7 +37,7 @@ export default function Footer() {
             />{" "}
             |{" "}
             <SocialLink
-              domain="linkedin.com/in/"
+              domain="linkedin.com/in"
               userName={social.linkedIn}
               name="LinkedIn"
             />{" "}
