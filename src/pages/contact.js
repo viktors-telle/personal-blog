@@ -9,33 +9,36 @@ const Contact = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Contact" />
-      <h1>Contact me</h1>
+      <h1>Contact Me</h1>
       <form
         class="email-form"
         name="contact"
         method="POST"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
+        action="/thank-you"
       >
-        <input type="hidden" name="bot-field" />
+        <input class="input-teal" type="hidden" name="bot-field" />
         <input type="hidden" name="form-name" value="contact" />
         <p>
           <label>
-            Your Name: <input type="text" name="name" />
+            Your Name <input class="input-teal" type="text" name="name" />
           </label>
         </p>
         <p>
           <label>
-            Your Email: <input type="email" name="email" />
+            Your Email <input class="input-teal" type="email" name="email" />
           </label>
         </p>
         <p>
           <label>
-            Message: <textarea name="message"></textarea>
+            Message <textarea class="input-teal" name="message"></textarea>
           </label>
         </p>
         <p>
-          <button type="submit">Send</button>
+          <button class="button-teal" type="submit">
+            Send
+          </button>
         </p>
       </form>
     </Layout>

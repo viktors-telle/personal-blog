@@ -13,8 +13,10 @@ ul > li {
 a {
   color: var(--main-color) !important;
   box-shadow: none;
-  text-decoration: underline !important;
-  text-underline-position: under;
+}
+
+a:hover {
+  color: #606c76 !important;
 }
 
 pre > code {
