@@ -99,12 +99,8 @@ And this finally worked! My colleague made sure that it works by deploying the 
 
 Installing the .NET Core runtime in the Service Fabric cluster turned out to be not so straight forward task as it seemed in the beginning. The main reason is the lack of documentation and examples on how to do it via Terraform templates. Thanks for reading!
 
-References:
+### Resources
 
-[https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-install-script](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-install-script#examples)
+<https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-install-script#examples>
 
-[**Azure Resource Manager: azurerm\_service\_fabric\_cluster - Terraform by HashiCorp**  
-_Manages a Service Fabric Cluster. The following arguments are supported: NOTE: The Reliability Level of the Cluster…_www.terraform.io](https://www.terraform.io/docs/providers/azurerm/r/service_fabric_cluster.html "https://www.terraform.io/docs/providers/azurerm/r/service_fabric_cluster.html")[](https://www.terraform.io/docs/providers/azurerm/r/service_fabric_cluster.html)
-
-[**Azure Resource Manager: azurerm\_virtual\_machine\_scale\_set - Terraform by HashiCorp**  
-_Manages a virtual machine scale set. Note: The azurerm\_virtual\_machine\_scale\_set resource has been superseded by the…_www.terraform.io](https://www.terraform.io/docs/providers/azurerm/r/virtual_machine_scale_set.html "https://www.terraform.io/docs/providers/azurerm/r/virtual_machine_scale_set.html")[](https://www.terraform.io/docs/providers/azurerm/r/virtual_machine_scale_set.html)
+<https://www.terraform.io/docs/providers/azurerm/r/service_fabric_cluster.html>

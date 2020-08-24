@@ -50,6 +50,10 @@ article ul {
   border-color: var(--main-color) !important;
 }
 
+.input-teal {
+  background-color: white !important;
+}
+
 @media (max-width: 480px) {
   ul > li {
     margin-left: 0px;
