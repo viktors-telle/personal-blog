@@ -7,7 +7,7 @@ const MainPhoto = () => {
     query {
       file(name: { eq: "Viktors and Emma" }, extension: { eq: "jpg" }) {
         childImageSharp {
-          fluid(quality: 100) {
+          fluid(quality: 100, webpQuality: 100) {
             ...GatsbyImageSharpFluid_withWebp_noBase64
           }
         }

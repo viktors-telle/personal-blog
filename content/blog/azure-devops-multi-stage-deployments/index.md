@@ -113,7 +113,7 @@ steps:
 
 * Check out the source code from the repository.
 * The [task to replace variable tokens](https://marketplace.visualstudio.com/items?itemName=qetza.replacetokens) with real values from the variable group. More about variable groups in the next paragraph.
-* Initialize Terraform configuration that involves downloading of `[azurerm](https://www.terraform.io/docs/providers/azurerm/index.html)` provider, and connecting to the central `[backend](https://www.terraform.io/docs/backends/types/azurerm.html)` storage of Terraform state.
+* Initialize Terraform configuration that involves downloading of [azurerm](https://www.terraform.io/docs/providers/azurerm/index.html) provider, and connecting to the central [backend](https://www.terraform.io/docs/backends/types/azurerm.html) storage of Terraform state.
 * Validate the Terraform template.
 * Show the list of changes that will be applied to the infrastructure.
 * Apply the changes if there are any.
@@ -146,8 +146,7 @@ When you have multiple Git repositories that use a shared template, it is a good
 
 I have added the shared deployment template here:
 
-[**viktors-telle/azure-devops-terraform-pipeline-template**  
-_Terraform template deployment pipeline for Azure DevOps. — viktors-telle/azure-devops-terraform-pipeline-template_github.com](https://github.com/viktors-telle/azure-devops-terraform-pipeline-template "https://github.com/viktors-telle/azure-devops-terraform-pipeline-template")[](https://github.com/viktors-telle/azure-devops-terraform-pipeline-template)
+[Azure DevOps multi-stage deployment pipeline for Terraform configuration](https://github.com/viktors-telle/azure-devops-terraform-pipeline-template).
 
 Below is the sample `yaml` file that uses the template defined in the repository above.
 
@@ -177,8 +176,7 @@ stages:
 
 You can also check the sample here:
 
-[**viktors-telle/azure-devops-terraform-pipeline**  
-_Contribute to viktors-telle/azure-devops-terraform-pipeline development by creating an account on GitHub._github.co](https://github.com/viktors-telle/azure-devops-terraform-pipeline "https://github.com/viktors-telle/azure-devops-terraform-pipeline")[](https://github.com/viktors-telle/azure-devops-terraform-pipeline)
+[Azure DevOps multi-stage deployment pipeline for Terraform configuration](https://github.com/viktors-telle/azure-devops-terraform-pipeline-template).
 
 ## Wrap Up
 

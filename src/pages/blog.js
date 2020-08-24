@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 import { CommentCount } from "disqus-react"
+import EmailList from "../components/emailList"
 
 const Blog = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -18,6 +19,7 @@ const Blog = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Blog" />
+      <EmailList />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
 
