@@ -2,24 +2,25 @@ import React from "react"
 import Footer from "./footer"
 
 import { rhythm } from "../utils/typography"
-import Navbar from "./navbar"
+import Header from "./header"
+import { ToastProvider } from "react-toast-notifications"
 
 const Layout = ({ children }) => {
   return (
-    <div>
-      <Navbar />
+    <ToastProvider autoDismiss="true">
+      <Header />
       <div
         style={{
           marginLeft: `auto`,
           marginRight: `auto`,
-          maxWidth: rhythm(24),
+          maxWidth: rhythm(38),
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
         <main>{children}</main>
       </div>
       <Footer />
-    </div>
+    </ToastProvider>
   )
 }
 

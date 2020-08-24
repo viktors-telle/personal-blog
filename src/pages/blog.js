@@ -4,16 +4,25 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
+import { CommentCount } from "disqus-react"
+import EmailList from "../components/emailList"
 
 const Blog = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
 
+  const disqusConfig = ({ slug, title }) => ({
+    shortname: process.env.GATSBY_DISQUS_NAME,
+    config: { identifier: slug, title },
+  })
+
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Blog" />
+      <EmailList />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
+
         return (
           <article key={node.fields.slug}>
             <header>
@@ -30,7 +39,18 @@ const Blog = ({ data, location }) => {
                 </Link>
               </h3>
               <small>{node.frontmatter.date} </small>
-              <small>&bull; {node.timeToRead} min read</small>
+              <small>&bull; {node.timeToRead} min read </small>
+              <small>
+                &bull;{" "}
+                <Link to={`/blog${node.fields.slug}#disqus_thread`}>
+                  <CommentCount
+                    {...disqusConfig({
+                      slug: node.frontmatter.title,
+                      title: siteTitle,
+                    })}
+                  ></CommentCount>
+                </Link>
+              </small>
             </header>
             <section>
               <p

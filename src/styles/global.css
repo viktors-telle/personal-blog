@@ -1,7 +1,65 @@
+:root {
+  --main-color: #0aa;
+}
+
 ul > li {
-  margin-left: 30px;
+  margin-left: 1.75rem;
 }
 
 .gatsby-resp-image-figcaption {
   text-align: center;
+}
+
+a {
+  color: var(--main-color) !important;
+  box-shadow: none;
+  text-decoration: underline !important;
+  text-underline-position: under;
+}
+
+pre > code {
+  background-color: #1e1e1e !important;
+}
+
+pre {
+  border-left: none !important;
+}
+
+blockquote {
+  font-size: inherit;
+}
+
+article ul {
+  list-style: inside !important;
+}
+
+.button-teal {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+}
+.button-teal.button-clear,
+.button-teal.button-outline {
+  background-color: transparent;
+  color: var(--main-color);
+}
+.button-teal.button-clear {
+  border-color: transparent;
+}
+
+.input-teal:focus {
+  border-color: var(--main-color) !important;
+}
+
+.input-teal {
+  background-color: white !important;
+}
+
+@media (max-width: 480px) {
+  ul > li {
+    margin-left: 0px;
+  }
+}
+
+h2 {
+  margin-top: 2rem !important;
 }

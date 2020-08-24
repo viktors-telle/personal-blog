@@ -1,5 +1,5 @@
 ---
-title: Azure DevOps multi-stage deployments
+title: Azure DevOps Multi-stage Deployments
 description:
  The multi-stage pipelines feature is relatively new in Azure DevOps and allows you to split the deployment process into multiple stages and reuse then.
 date: '2020-03-15T20:07:01.629Z'
@@ -12,7 +12,7 @@ canonical: https://levelup.gitconnected.com/azure-devops-multi-stage-deployments
 
 The [multi-stage pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/multi-stage-pipelines-experience?view=azure-devops) feature is relatively new in Azure DevOps, and it is currently in preview mode. This feature allows you to split the deployment process into multiple stages and reuse them across multiple projects. Pipelines are described in `yaml` format. In this article, I will describe how to configure the deployment of Terraform templates to provision infrastructure in Azure.
 
-### Problem to solve
+## Problem To Solve
 
 I had an assignment to configure the deployment of Terraform templates to the three environments: development, staging, and production.
 
@@ -20,7 +20,7 @@ The task sounds rather simple, but I did not have prior experience with `yaml` a
 
 So my journey began with reading the [documentation](https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema%2Cparameter-schema) about `yaml` and after a while, it turned out to be the most popular resource that I have visited during the learning and implementing period.
 
-### Template structure
+## Template Structure
 
 In the beginning, I created a separate Git repository for storing a deployment template that can be used by other projects.
 
@@ -30,7 +30,7 @@ In the beginning, I created a separate Git repository for storing a deployment t
 
 Validate stage checks if Terraform configuration is syntactically valid. In turn, the deploy stage performs the actual deployment using deployment jobs.
 
-### Deployment jobs
+## Deployment Jobs
 
 Let’s talk about the actual code that performs deployment. According to Microsoft recommendations, I chose to use jobs of type of [deployment job](https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema%2Cparameter-schema#deployment-job).
 
@@ -113,12 +113,12 @@ steps:
 
 * Check out the source code from the repository.
 * The [task to replace variable tokens](https://marketplace.visualstudio.com/items?itemName=qetza.replacetokens) with real values from the variable group. More about variable groups in the next paragraph.
-* Initialize Terraform configuration that involves downloading of `[azurerm](https://www.terraform.io/docs/providers/azurerm/index.html)` provider, and connecting to the central `[backend](https://www.terraform.io/docs/backends/types/azurerm.html)` storage of Terraform state.
+* Initialize Terraform configuration that involves downloading of [azurerm](https://www.terraform.io/docs/providers/azurerm/index.html) provider, and connecting to the central [backend](https://www.terraform.io/docs/backends/types/azurerm.html) storage of Terraform state.
 * Validate the Terraform template.
 * Show the list of changes that will be applied to the infrastructure.
 * Apply the changes if there are any.
 
-### Variable groups
+## Variable Groups
 
 You can use variables groups to store common deployment variables. I have utilized them to define variables such as the Azure Storage Account access key, Azure Service Principal client secret, and few more.
 
@@ -128,7 +128,7 @@ I did not find a better way how to separate variables by environments other than
 
 Azure DevOps also provides a way to [link the variable group with Azure Key Vault](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/variable-groups?view=azure-devops&tabs=yaml#link-secrets-from-an-azure-key-vault). To do it, you need to set up a [Service Connection](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml#create-a-service-connection) to connect to your Azure subscription. I have used the [Azure Resource Manager (ARM)](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml#sep-azure-resource-manager) service connection. In my opinion, it is a more robust way to store secrets because they are stored centrally and can be used in other places too.
 
-### Putting everything together
+## Putting Everything Together
 
 In the end, I have created the following deployment pipeline:
 
@@ -140,14 +140,13 @@ It consists of `validate` and `deploy` stages. Deploy stage has three jobs, one 
 * `Deploy to stage` is executed when the `refs/heads/rel*` branch is created.
 * `Deploy to prod` is executed when `refs/heads/rel*` branch is merged into `master`.
 
-#### Template usage example
+## Template Usage Example
 
 When you have multiple Git repositories that use a shared template, it is a good idea to store this template in the separate Git repository and reuse it.
 
 I have added the shared deployment template here:
 
-[**viktors-telle/azure-devops-terraform-pipeline-template**  
-_Terraform template deployment pipeline for Azure DevOps. — viktors-telle/azure-devops-terraform-pipeline-template_github.com](https://github.com/viktors-telle/azure-devops-terraform-pipeline-template "https://github.com/viktors-telle/azure-devops-terraform-pipeline-template")[](https://github.com/viktors-telle/azure-devops-terraform-pipeline-template)
+[Azure DevOps multi-stage deployment pipeline for Terraform configuration](https://github.com/viktors-telle/azure-devops-terraform-pipeline-template).
 
 Below is the sample `yaml` file that uses the template defined in the repository above.
 
@@ -177,9 +176,8 @@ stages:
 
 You can also check the sample here:
 
-[**viktors-telle/azure-devops-terraform-pipeline**  
-_Contribute to viktors-telle/azure-devops-terraform-pipeline development by creating an account on GitHub._github.co](https://github.com/viktors-telle/azure-devops-terraform-pipeline "https://github.com/viktors-telle/azure-devops-terraform-pipeline")[](https://github.com/viktors-telle/azure-devops-terraform-pipeline)
+[Azure DevOps multi-stage deployment pipeline for Terraform configuration](https://github.com/viktors-telle/azure-devops-terraform-pipeline-template).
 
-### Wrap up
+## Wrap Up
 
 I was able to achieve the desired goal to deploy Terraform configuration to multiple environments, but multi-stage pipelines somehow feel incomplete in terms of documentation and there should also be a more convenient way to define variables groups based on different environments. Let’s see if these issues will be resolved in the final release.

@@ -1,8 +1,19 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import SocialLink from "./socialLink"
+import styled from "styled-components"
 
-export default function Footer() {
+const FooterWrapper = styled.footer`
+  text-align: center;
+  max-width: 64rem;
+  margin: 0 auto 0 auto;
+
+  @media (max-width: 768px) {
+    padding: 0 2vw;
+  }
+`
+
+const Footer = () => {
   return (
     <StaticQuery
       query={graphql`
@@ -22,14 +33,7 @@ export default function Footer() {
       render={(data) => {
         const { social } = data.site.siteMetadata
         return (
-          <footer
-            style={{
-              textAlign: `center`,
-              padding: `0rem 1.3125rem`,
-              maxWidth: `42rem`,
-              margin: `0 auto 0 auto`,
-            }}
-          >
+          <FooterWrapper>
             <SocialLink
               domain="twitter.com"
               userName={social.twitter}
@@ -37,7 +41,7 @@ export default function Footer() {
             />{" "}
             |{" "}
             <SocialLink
-              domain="linkedin.com/in/"
+              domain="linkedin.com/in"
               userName={social.linkedIn}
               name="LinkedIn"
             />{" "}
@@ -61,9 +65,11 @@ export default function Footer() {
             >
               <small>© 2020 - Viktors Telle. All rights reserved.</small>
             </p>
-          </footer>
+          </FooterWrapper>
         )
       }}
     />
   )
 }
+
+export default Footer

@@ -15,9 +15,9 @@ const LogoWrap = styled.div`
 const Logo = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(name: { eq: "viktors-telle-192x192" }, extension: { eq: "png" }) {
+      file(name: { eq: "android-chrome-192x192" }, extension: { eq: "png" }) {
         childImageSharp {
-          fluid(maxWidth: 50, pngQuality: 100) {
+          fluid(maxWidth: 50, quality: 100, webpQuality: 100) {
             ...GatsbyImageSharpFluid_withWebp_noBase64
           }
         }

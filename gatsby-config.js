@@ -1,11 +1,19 @@
+const {
+  NODE_ENV,
+  URL: NETLIFY_SITE_URL = "https://www.viktorstelle.com",
+  DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
+  CONTEXT: NETLIFY_ENV = NODE_ENV,
+} = process.env
+const isNetlifyProduction = NETLIFY_ENV === "production"
+const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL
+
 module.exports = {
   siteMetadata: {
     // edit below
     title: `Viktors Telle`,
     author: `Viktors Telle`,
-    description: `Viktors Telle personal website and blog. Viktors is system architect and full-stack developer with 12+ years of experience. My focus is primarily on developing applications using .NET Core and SPA frameworks like React and Angular. I am also experienced in setting up CI/CD pipelines in TeamCity, Octopus Deploy, and Azure
-    DevOps.`,
-    siteUrl: `https://viktorstelle.com`,
+    description: `My name is Viktors Telle, and I am a software developer from Latvia. I work in the industry for more than 12 years. I am a husband and father of the two beautiful kids. I am a family man, and since the Covid-19 outbreak started, I work from home, and together with my wife, take care of our kids.`,
+    siteUrl,
     social: {
       twitter: `ViktorsTelle`,
       linkedIn: `viktors-telle`,
@@ -19,7 +27,7 @@ module.exports = {
       },
       {
         name: "Blog",
-        link: "/blog",
+        link: "/blog/",
       },
       {
         name: "Contact",
@@ -116,7 +124,7 @@ module.exports = {
         theme_color: `#209CEE`,
         display: `minimal-ui`,
         // edit below
-        icon: `content/assets/viktors-telle-512x512.png`,
+        icon: `content/assets/android-chrome-512x512.png`,
       },
     },
     `gatsby-plugin-offline`,
@@ -124,6 +132,35 @@ module.exports = {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        resolveEnv: () => NETLIFY_ENV,
+        env: {
+          production: {
+            policy: [{ userAgent: "*", disallow: ["/admin"] }],
+          },
+          "branch-deploy": {
+            policy: [{ userAgent: "*", disallow: ["/"] }],
+            sitemap: null,
+            host: null,
+          },
+          "deploy-preview": {
+            policy: [{ userAgent: "*", disallow: ["/"] }],
+            sitemap: null,
+            host: null,
+          },
+        },
+      },
+    },
+    {
+      resolve: "gatsby-plugin-mailchimp",
+      options: {
+        endpoint:
+          "https://viktorstelle.us17.list-manage.com/subscribe/post?u=3cbc846dbc5d9cc54a2d286db&amp;id=699e61a498",
+        timeout: 3500,
       },
     },
   ],

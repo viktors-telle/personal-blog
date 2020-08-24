@@ -4,7 +4,7 @@ import { Link, StaticQuery, graphql } from "gatsby"
 
 const NavItem = styled(Link)`
   text-decoration: none;
-  color: #111;
+  color: #111 !important;
   display: inline-block;
   white-space: nowrap;
   margin: 0 1vw;

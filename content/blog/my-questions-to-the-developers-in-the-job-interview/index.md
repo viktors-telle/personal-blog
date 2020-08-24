@@ -1,5 +1,5 @@
 ---
-title: My questions to the developers in the job interview
+title: My Questions To The Developers In The Job Interview
 description:
  I will describe my own interviewing experience with developers. I will present the list of technical questions that I ask during the interview. I will also show the checklist of home task review criteria.
 date: '2020-07-19T18:56:43.252Z'
@@ -12,7 +12,7 @@ canonical: https://medium.com/datadriveninvestor/my-questions-to-the-developers-
 
 I will describe my own interviewing experience with developers. People who I interview, have different expertise levels. I have spoken with pure back-end and front-end developers and also full-stack developers. During the interview, I explain what is the team set-up and what technologies and methodologies we use. Also, I ask questions to understand the candidate’s level of experience. As I am a system architect, not an HR person, my questions are mostly technical ones.
 
-### Questions I usually ask
+## Questions I Usually Ask
 
 Since the code quality is one of the key metrics in software development, I usually start with the question:
 
@@ -35,7 +35,7 @@ It’s fine not to have the answers to all of these questions. You can tell the 
 
 Look, I am not a fan of asking theoretical questions. I am not saying that you should not know the software development theory. I believe that my questions can better reflect the maturity and hand-on experience of the person. As you can see, none of the questions include the specifics of any programming language. It is not necessary to ask such questions since you can assess the technical knowledge differently.
 
-### How to test technical knowledge
+## How To Test Technical Knowledge
 
 The best way to assess candidate technical skill levels is by giving them a coding task. I prefer the option to allow the candidate to complete the task at home. A person can then write the code without unnecessary stress and set the deadline by themself.
 
@@ -53,7 +53,7 @@ Once you have received the completed task, you can check:
 
 After reviewing the home task, the detailed code review is always sent back to the candidate.
 
-### What about soft skills
+## What About Soft Skills
 
 What are soft skills anyway? Soft skills are, but not limited to, communication, critical thinking, leadership, positive attitude, teamwork, work ethic. It is not enough to have only great technical skills. Ok, if you are developing your project without need talking to other people, then it is acceptable lacking soft skills. Yet, in real-life projects, you have to communicate with different people like fellow developers, testers, product owners, even business people sometimes. You have to have at least a basic set of soft skills. Here is what raises a red flag to me immediately.
 
@@ -64,7 +64,7 @@ What are soft skills anyway? Soft skills are, but not limited to, communication,
 
 The hiring process is most likely not continued with a particular candidate if one of these negative traits is observed.
 
-### Final words
+## Final Words
 
 The aim of the questions I ask during the interview is to understand the maturity level of the candidate. Combine them with coding task and you should understand whether the candidate is the senior, middle, or junior developer.
 
@@ -72,9 +72,8 @@ What are your expectations of candidates? What questions do you ask? Your commen
 
 Thanks for taking the time to read my article!
 
-Resources:
+### Resources
 
-[**Best Soft Skills to List on a Resume**  
-_Candidates with strong soft skills are in high demand for many different types of jobs. Soft skills are the…_www.thebalancecareers.com](https://www.thebalancecareers.com/list-of-soft-skills-2063770 "https://www.thebalancecareers.com/list-of-soft-skills-2063770")[](https://www.thebalancecareers.com/list-of-soft-skills-2063770)
+<https://www.thebalancecareers.com/list-of-soft-skills-2063770>
 
-[https://en.wikipedia.org/wiki/SOLID](https://en.wikipedia.org/wiki/SOLID)
+<https://en.wikipedia.org/wiki/SOLID>

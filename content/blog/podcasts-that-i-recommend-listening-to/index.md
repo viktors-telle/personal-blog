@@ -1,5 +1,5 @@
 ---
-title: Five podcasts that I recommend listening to
+title: Five Podcasts That I Recommend Listening To
 date: 2020-08-02T12:48:41.817Z
 description: When the Covid-19 outbreak started, I started to work from home as
   many people did. It meant that I do not have to spend extra hours on the
@@ -15,13 +15,16 @@ keywords:
   - Self Development
   - Entrepreneurship
 ---
+
+![Photo by [William Iven](https://unsplash.com/@firmbee?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](phone-with-headphones.jpg)
+
 When the Covid-19 outbreak started, I started to work from home as many people did. It meant that I do not have to spend extra hours on the commute. So I decided to spend the saved time to invest more in broadening my knowledge in finance, entrepreneurship, and information technology. Investing in your knowledge is the best investment that you could do. Listening to the podcasts was one of the new things that I started to do. I mostly listen to them during my everyday walk with my daughter, but only when she falls asleep in the stroller.
 
 Here is the list of the five podcasts that I listen to regularly.
 
-## We Study Billionaires
+## [We Study Billionaires](https://www.theinvestorspodcast.com/we-study-billionaires/)
 
-![We Study Billionaires](we-study-billionaires.png "We Study Billionaires")
+[![We Study Billionaires](we-study-billionaires.png "We Study Billionaires")](https://www.theinvestorspodcast.com/we-study-billionaires/)
 
 First, I wanted to understand finances better so I did the research and found a couple of promising podcasts. This is one of my favorites. It comes out every Sunday and informs you of the latest developments in economics and investing. The podcast hosted by Preston Pysh and Stig Brodersen talks about the investment strategies of famous investors like Warren Buffet and Ray Dalio. They also review popular books on investing and entrepreneurship and invite guests to talk about the latest trends in economics and investing. I especially enjoyed these episodes:
 
@@ -33,17 +36,17 @@ First, I wanted to understand finances better so I did the research and found a 
 
 [Link to the show on Spotify](https://open.spotify.com/show/28RHOkXkuHuotUrkCdvlOP?si=sgpBam5cTV-00FPWApTThA)
 
-## Techmeme Ride Home
+## [Techmeme Ride Home](https://www.techmeme.com/)
 
-![Techmeme Ride Home](techmeme-ride-home.jpeg "Techmeme Ride Home")
+[![Techmeme Ride Home](techmeme-ride-home.jpeg "Techmeme Ride Home")](https://www.techmeme.com/)
 
 This podcast comes out every weekday. Brian does a great job informing listeners of the latest technology news such as product news, recent acquisitions, earnings reports of the big tech companies. This podcast is based on [techmeme.com](https://www.techmeme.com/), which is Silicon Valley's most-read news source.
 
 [Link to the show on Spotify](https://open.spotify.com/show/1jBNbPVlGUen3sWdd25ho6?si=TPm4Ua8ASnqhMr6cFOQ78w)
 
-## The Web Platform Podcast
+## [The Web Platform Podcast](https://thewebplatformpodcast.com/)
 
-![The Web Platform Podcast](the-web-platform-podcast.png "The Web Platform Podcast")
+[![The Web Platform Podcast](the-web-platform-podcast.png "The Web Platform Podcast")](https://thewebplatformpodcast.com/)
 
 I am a web developer myself. It is only reasonable that I should listen to the podcast that talks about the latest trends in web development.
 
@@ -51,23 +54,23 @@ This podcast was founded in 2014 by HTML W3C invited expert Erik Isaksen. It cov
 
 [Link to the show on Spotify](https://open.spotify.com/show/3apF0cv7ub3mC3J5e7Lq6v?si=NKRzqe9XSM-qHJFi93PPtA)
 
-## AskPat 2.0
+## [AskPat 2.0](https://www.smartpassiveincome.com/shows/askpat/)
 
-![AskPat 2.0](ask-pat.png "AskPat 2.0")
+[![AskPat 2.0](ask-pat.png "AskPat 2.0")](https://www.smartpassiveincome.com/shows/askpat/)
 
-When it comes to entrepreneurship podcast by Pat Flynn is the best. This podcast comes out every day. Pat answers one question asked by one of his listeners. Questions like: 
+When it comes to entrepreneurship podcast by Pat Flynn is the best. This podcast comes out every day. Pat answers one question asked by one of his listeners. Questions like:
 
 * How to create the best "About" page on your website?
-* How to increase engagement and participation in your community? 
+* How to increase engagement and participation in your community?
 * How do you handle negative reviews?
 
 These and many more questions get answered during the show and help you and your business to perform better. Probably later I will also listen to another Pat Flynn's podcast: "[The Smart Passive Income Online Business and Blogging Podcast](https://open.spotify.com/show/7wjv5MRCXWXImqTFhcufLy?si=EK4-SNgZRi6OrHW_NOYNdw)".
 
 [Link to the show on Spotify](https://open.spotify.com/show/00CuvjXkTsBJkp7F2v1Rjl?si=IHAYvyNaQcCy_X6Z89MC_Q)
 
-## The College Investor Audio Show
+## [The College Investor Audio Show](https://thecollegeinvestor.com/audio-show/)
 
-![The College Investor Audio Show](the-college-investor-audio-show.jpg "The College Investor Audio Show")
+[![The College Investor Audio Show](the-college-investor-audio-show.jpg "The College Investor Audio Show")](https://thecollegeinvestor.com/audio-show/)
 
 One more podcast covering finances and investing. I watched some episodes on topics that interested me at a particular time. For example:
 
@@ -77,6 +80,6 @@ One more podcast covering finances and investing. I watched some episodes on top
 
 [Link to the show on Spotify](https://open.spotify.com/show/2WtF5XvOdiNNLSXbkPmvLa?si=FqYbpLBpT12V267ITgKpWw)
 
-## Conclusion
+## Final Words
 
-You can find all of these podcasts on Spotify. I have provided the links above. I encourage you to give them a shot and hope that you will enjoy them as I do. What are your favorite podcasts?
+You can find all of these podcasts on Spotify. I have provided the links above. I encourage you to give them a shot and hope that you will enjoy them as I do. What are your favorite podcasts? You can leave a comment below.
