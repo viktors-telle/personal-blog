@@ -37,6 +37,7 @@ const EmailList = () => {
           name="email"
           type="email"
           className="input-teal"
+          required
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
