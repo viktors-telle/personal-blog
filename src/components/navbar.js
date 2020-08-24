@@ -76,14 +76,14 @@ const Hamburger = styled.div`
 
   ::before {
     transform: ${(props) =>
-      props.open ? "rotate(-90deg) translate(-8px, 0px)" : "rotate(0deg)"};
-    top: -8px;
+      props.open ? "rotate(-90deg) translate(-12px, 0px)" : "rotate(0deg)"};
+    top: -12px;
   }
 
   ::after {
     opacity: ${(props) => (props.open ? "0" : "1")};
     transform: ${(props) => (props.open ? "rotate(90deg) " : "rotate(0deg)")};
-    top: 8px;
+    top: 12px;
   }
 `
 const Navbar = () => {

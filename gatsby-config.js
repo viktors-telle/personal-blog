@@ -110,7 +110,6 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        // edit below
         trackingId: `UA-173562871-1`,
       },
     },
@@ -123,7 +122,6 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#209CEE`,
         display: `minimal-ui`,
-        // edit below
         icon: `content/assets/android-chrome-512x512.png`,
       },
     },

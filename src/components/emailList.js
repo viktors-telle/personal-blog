@@ -36,12 +36,12 @@ const EmailList = () => {
         <input
           name="email"
           type="email"
-          class="input-teal"
+          className="input-teal"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
       </label>
-      <button class="button-teal" type="submit">
+      <button className="button-teal" type="submit">
         Subscribe
       </button>
     </form>
