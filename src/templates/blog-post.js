@@ -7,6 +7,7 @@ import { rhythm, scale } from "../utils/typography"
 import { DiscussionEmbed, CommentCount } from "disqus-react"
 import styled from "styled-components"
 import ScrollToTopButton from "../components/scrollToTopButton"
+import EmailList from "../components/emailList"
 
 const PostNavigation = styled.ul`
   display: flex;
@@ -18,6 +19,9 @@ const PostNavigation = styled.ul`
   li {
     max-width: 300px;
     margin-left: 0px;
+    :nth-child(2) {
+      text-align: right;
+    }
   }
 `
 
@@ -54,7 +58,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           </h1>
           <p
             style={{
-              ...scale(-1 / 5),
+              ...scale(0.4),
               display: `block`,
               marginBottom: rhythm(1),
               marginTop: rhythm(0.5),
@@ -77,6 +81,9 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             marginBottom: rhythm(1),
           }}
         />
+        <p>
+          <EmailList />
+        </p>
         <p>
           {post.frontmatter.keywords.map((tag, i) => [
             <strong

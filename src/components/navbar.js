@@ -10,9 +10,8 @@ const Navigation = styled.nav`
   position: relative;
   justify-content: space-between;
   text-transform: uppercase;
-  border-bottom: 2px solid #33333320;
   margin: 0 auto;
-  padding: 0 5vw;
+  max-width: 64rem;
   z-index: 2;
   align-self: center;
 
@@ -23,6 +22,7 @@ const Navigation = styled.nav`
     left: 0;
     right: 0;
     left: 0;
+    padding: 0 2vw;
   }
 `
 
@@ -76,14 +76,14 @@ const Hamburger = styled.div`
 
   ::before {
     transform: ${(props) =>
-      props.open ? "rotate(-90deg) translate(-10px, 0px)" : "rotate(0deg)"};
-    top: -10px;
+      props.open ? "rotate(-90deg) translate(-8px, 0px)" : "rotate(0deg)"};
+    top: -8px;
   }
 
   ::after {
     opacity: ${(props) => (props.open ? "0" : "1")};
     transform: ${(props) => (props.open ? "rotate(90deg) " : "rotate(0deg)")};
-    top: 10px;
+    top: 8px;
   }
 `
 const Navbar = () => {

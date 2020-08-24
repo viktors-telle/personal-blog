@@ -74,7 +74,6 @@ Thanks for taking the time to read my article!
 
 ### Resources
 
-[**Best Soft Skills to List on a Resume**  
-_Candidates with strong soft skills are in high demand for many different types of jobs. Soft skills are the…_www.thebalancecareers.com](https://www.thebalancecareers.com/list-of-soft-skills-2063770 "https://www.thebalancecareers.com/list-of-soft-skills-2063770")[](https://www.thebalancecareers.com/list-of-soft-skills-2063770)
+<https://www.thebalancecareers.com/list-of-soft-skills-2063770>
 
-[https://en.wikipedia.org/wiki/SOLID](https://en.wikipedia.org/wiki/SOLID)
+<https://en.wikipedia.org/wiki/SOLID>

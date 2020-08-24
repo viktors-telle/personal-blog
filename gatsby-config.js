@@ -120,7 +120,7 @@ module.exports = {
         theme_color: `#209CEE`,
         display: `minimal-ui`,
         // edit below
-        icon: `content/assets/viktors-telle-512x512.png`,
+        icon: `content/assets/android-chrome-512x512.png`,
       },
     },
     `gatsby-plugin-offline`,
@@ -149,6 +149,14 @@ module.exports = {
             host: null,
           },
         },
+      },
+    },
+    {
+      resolve: "gatsby-plugin-mailchimp",
+      options: {
+        endpoint:
+          "https://viktorstelle.us17.list-manage.com/subscribe/post?u=3cbc846dbc5d9cc54a2d286db&amp;id=699e61a498",
+        timeout: 3500,
       },
     },
   ],
