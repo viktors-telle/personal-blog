@@ -120,7 +120,7 @@ module.exports = {
         theme_color: `#209CEE`,
         display: `minimal-ui`,
         // edit below
-        icon: `content/assets/viktors-telle-512x512.png`,
+        icon: `content/assets/android-chrome-512x512.png`,
       },
     },
     `gatsby-plugin-offline`,
