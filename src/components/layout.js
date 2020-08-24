@@ -2,13 +2,13 @@ import React from "react"
 import Footer from "./footer"
 
 import { rhythm } from "../utils/typography"
-import Navbar from "./navbar"
+import Header from "./header"
 import { ToastProvider } from "react-toast-notifications"
 
 const Layout = ({ children }) => {
   return (
     <ToastProvider autoDismiss="true">
-      <Navbar />
+      <Header />
       <div
         style={{
           marginLeft: `auto`,
