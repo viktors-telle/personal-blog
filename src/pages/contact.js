@@ -22,18 +22,20 @@ const Contact = ({ data, location }) => {
         <input type="hidden" name="form-name" value="contact" />
         <p>
           <label>
-            Your Name <input className="input-teal" type="text" name="name" />
+            Your Name{" "}
+            <input className="input-teal" type="text" name="name" required />
           </label>
         </p>
         <p>
           <label>
-            Your Email{" "}
-            <input className="input-teal" type="email" name="email" />
+            Your Email
+            <input className="input-teal" type="email" name="email" required />
           </label>
         </p>
         <p>
           <label>
-            Message <textarea className="input-teal" name="message"></textarea>
+            Message{" "}
+            <textarea className="input-teal" name="message" required></textarea>
           </label>
         </p>
         <p>
