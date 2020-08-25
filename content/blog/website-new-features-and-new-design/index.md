@@ -1,5 +1,5 @@
 ---
-title: Website new features and new design
+title: Website New Features And New Design
 date: 2020-08-25T06:10:45.376Z
 description: I have recently updated the design of the site and added a few new
   features to make my site complete.
@@ -8,7 +8,7 @@ keywords:
   - Mailing List
   - Contact Form
 ---
-I have recently updated the design of the site and added a few new features to make my site complete.
+I have recently updated the design of the site and added a few new features to make my site complete. Continue reading to learn, which services and technologies I have used.
 
 ## New Design
 
@@ -34,7 +34,7 @@ I have added two new features - Mailing List and Contact Page.
 
 You can now subscribe to my mailing list to keep up-to-date with the latest articles from me. Mailchimp seemed like a good choice, so I had to look if there is a plugin for Gatsby, and of course, there was already a [plugin](https://www.gatsbyjs.com/plugins/gatsby-plugin-mailchimp/) for Mailchimp integration. I have built a [React function component](https://reactjs.org/docs/components-and-props.html#function-and-class-components), which you can check out in the [GitHub repo](https://github.com/viktors-telle/personal-blog/blob/master/src/components/emailList.js) of this website. I decided to add the mailing list in the two places for better engagement. The first one is at the top of the blog section, and the second one is at the end of each article.
 
----
+- - -
 
 ### Contact Page
 
