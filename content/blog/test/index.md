@@ -1,8 +1,8 @@
 ---
-title: Test
+title: Test Title
 date: 2020-08-26T19:23:48.463Z
-description: Test
+description: Test description
 keywords:
-  - Test
+  - Test Keyword
 ---
-Test
+Test blog post
