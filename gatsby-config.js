@@ -9,7 +9,6 @@ const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL
 
 module.exports = {
   siteMetadata: {
-    // edit below
     title: `Viktors Telle`,
     author: `Viktors Telle`,
     description: `My name is Viktors Telle, and I am a software developer from Latvia. I work in the industry for more than 12 years. I am a husband and father of the two beautiful kids. I am a family man, and since the Covid-19 outbreak started, I work from home, and together with my wife, take care of our kids.`,
@@ -92,7 +91,70 @@ module.exports = {
         siteUrl: `https://viktorstelle.com`,
       },
     },
-    `gatsby-plugin-feed`,
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map((edge) => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  title: edge.node.frontmatter.title,
+                  description: edge.node.frontmatter.description,
+                  date: edge.node.frontmatter.date,
+                  url:
+                    site.siteMetadata.siteUrl + "/blog" + edge.node.fields.slug,
+                  guid:
+                    site.siteMetadata.siteUrl + "/blog" + edge.node.fields.slug,
+                  custom_elements: [
+                    { "content:encoded": edge.node.html },
+                    { tags: edge.node.frontmatter.keywords.join(", ") },
+                  ],
+                })
+              })
+            },
+            query: `
+            {
+              allMarkdownRemark(
+                limit: 1000,
+                sort: { order: DESC, fields: [frontmatter___date] }
+              ) {
+                edges {
+                  node {
+                    excerpt
+                    html
+                    fields {
+                      slug
+                    }
+                    frontmatter {
+                      title
+                      date
+                      description
+                      keywords
+                    }
+                  }
+                }
+              }
+            }
+          `,
+            output: "/rss.xml",
+            title: "https://www.viktorstelle.com",
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -120,7 +182,7 @@ module.exports = {
         short_name: `ViktorsTelleWeb`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#209CEE`,
+        theme_color: `#0aa`,
         display: `minimal-ui`,
         icon: `content/assets/android-chrome-512x512.png`,
       },
