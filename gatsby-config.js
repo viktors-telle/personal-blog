@@ -110,17 +110,23 @@ module.exports = {
           {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
               return allMarkdownRemark.edges.map((edge) => {
+                const url =
+                  site.siteMetadata.siteUrl + "/blog" + edge.node.fields.slug
                 return Object.assign({}, edge.node.frontmatter, {
                   title: edge.node.frontmatter.title,
                   description: edge.node.frontmatter.description,
                   date: edge.node.frontmatter.date,
-                  url:
-                    site.siteMetadata.siteUrl + "/blog" + edge.node.fields.slug,
-                  guid:
-                    site.siteMetadata.siteUrl + "/blog" + edge.node.fields.slug,
+                  url: url,
+                  guid: url,
                   custom_elements: [
-                    { "content:encoded": edge.node.html },
+                    {
+                      "content:encoded": edge.node.html.replace(
+                        /(?<=\"|\s)\/static\//g,
+                        `${site.siteMetadata.siteUrl}\/static\/`
+                      ),
+                    },
                     { tags: edge.node.frontmatter.keywords.join(", ") },
+                    { "dc:creator": "Viktors Telle" },
                   ],
                 })
               })
