@@ -68,7 +68,7 @@ h2 {
 
 span.gatsby-resp-image-background-image {
   display: none !important;
-  padding-bottom: 0;
+  padding-bottom: 0 !important;
 }
 
 img.gatsby-resp-image-image {
