@@ -65,3 +65,11 @@ article ul {
 h2 {
   margin-top: 2rem !important;
 }
+
+span.gatsby-resp-image-background-image {
+  display: none !important;
+}
+
+img.gatsby-resp-image-image {
+  position: relative !important;
+}
