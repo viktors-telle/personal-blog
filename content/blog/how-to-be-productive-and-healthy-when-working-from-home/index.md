@@ -8,7 +8,7 @@ keywords:
   - Productivity
   - Work From Home
   - Stay Healthy
-  - Work-Life Balance
+  - Work Life Balance
 ---
 ![You Got This](you-got-this.jpg)
 
