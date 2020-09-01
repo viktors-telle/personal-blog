@@ -8,10 +8,10 @@ import {
   LinkedinShareButton,
 } from "react-share"
 
-const SocialSharing = ({ postFrontmatter, postUrl, siteUrl }) => (
-  <div style={{ display: `table` }}>
-    Share
-    <span style={{ verticalAlign: `middle`, display: `table-cell` }}>
+const SocialSharing = ({ postFrontmatter, postUrl, siteUrl }) => {
+  const iconSize = 44
+  return (
+    <div>
       <TwitterShareButton
         title={postFrontmatter.title}
         url={postUrl}
@@ -19,10 +19,10 @@ const SocialSharing = ({ postFrontmatter, postUrl, siteUrl }) => (
           return keyword.replace(/\s/g, "")
         })}
       >
-        <TwitterIcon size={32} round={true} />
+        <TwitterIcon size={iconSize} round={true} />
       </TwitterShareButton>{" "}
       <FacebookShareButton url={postUrl} quote={postFrontmatter.description}>
-        <FacebookIcon size={32} round={true} />
+        <FacebookIcon size={iconSize} round={true} />
       </FacebookShareButton>{" "}
       <LinkedinShareButton
         url={postUrl}
@@ -30,10 +30,10 @@ const SocialSharing = ({ postFrontmatter, postUrl, siteUrl }) => (
         summary={postFrontmatter.description}
         source={siteUrl}
       >
-        <LinkedinIcon size={32} round={true} />
+        <LinkedinIcon size={iconSize} round={true} />
       </LinkedinShareButton>
-    </span>
-  </div>
-)
+    </div>
+  )
+}
 
 export default SocialSharing
