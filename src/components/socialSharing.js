@@ -9,9 +9,9 @@ import {
 } from "react-share"
 
 const SocialSharing = ({ postFrontmatter, postUrl, siteUrl }) => {
-  const iconSize = 44
+  const iconSize = 40
   return (
-    <div>
+    <div style={{ marginBottom: `10px` }}>
       <TwitterShareButton
         title={postFrontmatter.title}
         url={postUrl}
