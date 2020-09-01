@@ -31,7 +31,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const siteUrl = data.site.siteMetadata.siteUrl
   const { previous, next } = pageContext
-  const postUrl = location.href.replace(/\/+$/, "")
+  const postUrl = location.href
 
   const disqusConfig = ({ slug, title }) => ({
     shortname: process.env.GATSBY_DISQUS_NAME,
