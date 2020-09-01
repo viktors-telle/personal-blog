@@ -8,6 +8,7 @@ import { DiscussionEmbed, CommentCount } from "disqus-react"
 import styled from "styled-components"
 import ScrollToTopButton from "../components/scrollToTopButton"
 import EmailList from "../components/emailList"
+import SocialSharing from "../components/socialSharing"
 
 const PostNavigation = styled.ul`
   display: flex;
@@ -28,7 +29,9 @@ const PostNavigation = styled.ul`
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
+  const siteUrl = data.site.siteMetadata.siteUrl
   const { previous, next } = pageContext
+  const postUrl = location.href.replace(/\/+$/, "")
 
   const disqusConfig = ({ slug, title }) => ({
     shortname: process.env.GATSBY_DISQUS_NAME,
@@ -74,6 +77,11 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               />
             </Link>
           </p>
+          <SocialSharing
+            postFrontmatter={post.frontmatter}
+            postUrl={postUrl}
+            siteUrl={siteUrl}
+          />
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
@@ -81,9 +89,12 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             marginBottom: rhythm(1),
           }}
         />
-        <p>
-          <EmailList />
-        </p>
+        <EmailList />
+        <SocialSharing
+          postFrontmatter={post.frontmatter}
+          postUrl={postUrl}
+          siteUrl={siteUrl}
+        />
         <p>
           {post.frontmatter.keywords.map((tag, i) => [
             <strong
@@ -137,6 +148,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        siteUrl
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
