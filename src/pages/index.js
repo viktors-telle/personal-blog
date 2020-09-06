@@ -54,7 +54,7 @@ const IndexPage = (props) => {
       </p>
       <p>
         If you want to reach me, please send me a message via
-        <Link to="/contact/"> contact form.</Link>I can advise on the
+        <Link to="/contact/"> contact form. </Link>I can advise on the
         development best practices, how to improve legacy code base, how to
         automate your build and deployment pipeline, or other software
         development topics.
