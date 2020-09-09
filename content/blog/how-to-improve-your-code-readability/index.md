@@ -5,4 +5,18 @@ description: todo
 keywords:
   - todo
 ---
-todo
+Put each parameter on the separate line
+
+Place public methods on top
+
+Place the methods in the calling order
+
+Do not use _ prefixes since they do not add any value
+
+If the parameter count is more than 3, create a separate class
+
+Do not exceed 100 lines of code per class
+
+Prefer separate classes instead of regions
+
+Choose appropriate names
