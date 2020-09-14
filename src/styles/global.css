@@ -62,6 +62,11 @@ article ul {
   }
 }
 
+h1 {
+  font-size: 4rem !important;
+}
+
 h2 {
   margin-top: 2rem !important;
+  font-size: 3rem !important;
 }
