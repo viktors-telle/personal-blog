@@ -8,7 +8,9 @@ keywords:
   - C#
   - .NET
 ---
-We spend more time reading others or our code than writing it.
+We spend more time reading others or our code than writing it. Here is the quote by Robert C. Martin a.k.a. Uncle Bob from his book Clean Code: A Handbook of Agile Software Craftsmanship:
+
+> Indeed, the ratio of time spent reading versus writing is well over 10 to 1. We are constantly reading old code as part of the effort to write new code. ...\[Therefore,] making it easy to read makes it easier to write.
 
 ## Place each parameter on the separate line
 
