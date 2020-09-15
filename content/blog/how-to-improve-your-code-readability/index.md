@@ -8,6 +8,8 @@ keywords:
   - C#
   - .NET
 ---
+We spend more time reading others or our code than writing it.
+
 ## Place each parameter on the separate line
 
 Class constructor and method parameters should be placed on a separate line.
@@ -46,6 +48,8 @@ Don't
 
 Do
 
+## Split long lines of code into multiple lines
+
 ## Create small classes focused on a single task
 
 Comply with the Single Responsibility Principle (SRP). Create small classes usually means not exceeding 100 lines of code.
@@ -54,7 +58,9 @@ Don't
 
 Do
 
-## Prefer to extract the code into separate classes instead of using regions
+## Prefer to extract the code into separate files instead of using regions
+
+Although regions can be a decent way to separate different code blocks in the single file, more often it is an indication that the file contains too much code and should be extracted into separate files.
 
 Don't
 
@@ -62,8 +68,12 @@ Do
 
 ## Choose appropriate names
 
-Choose the names for the classes, properties, variables that are easy to understand. Don't be shy to use long names to better express your intention.
+Choose the names for the classes, properties, variables that are easy to understand and describe its intent. Don't be shy to use long names to better express your intention.
 
 Don't
 
 Do
+
+## Conclusion
+
+I know that many of these suggestions might sound obvious, but I often see the same mistakes made in the code that I review, therefore I decided to share them with you.
