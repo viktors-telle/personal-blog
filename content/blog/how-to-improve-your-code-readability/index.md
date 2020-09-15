@@ -1,7 +1,16 @@
 ---
 title: How To Improve Your Code Readability
 date: 2020-09-09T18:32:56.770Z
-description: todo
+description: >-
+  We spend more time reading others or our code than writing it. Here is the
+  quote by Robert C. Martin a.k.a. Uncle Bob from his famous book Clean Code: A
+  Handbook of Agile Software Craftsmanship:
+
+
+  "Indeed, the ratio of time spent reading versus writing is well over 10 to 1. We are constantly reading old code as part of the effort to write new code. ...[Therefore,] making it easy to read makes it easier to write."
+
+
+  These are strong words and clearly indicate that we should pay much more attention to writing a well-readable code. I will share nine suggestions that will make your code much more appealing and easy to read.
 keywords:
   - Code Readability
   - Clean Code
