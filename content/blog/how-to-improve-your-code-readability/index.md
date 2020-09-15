@@ -24,7 +24,7 @@ Don't
 
 Do
 
-## Place public methods on the top of the class
+## 2. Place public methods on the top of the class
 
 Public methods of the class are the ones used by other classes, therefore should be located at the beginning of the class to avoid scrolling and navigating back and forth.
 
@@ -32,7 +32,7 @@ Don't
 
 Do
 
-## 2. Place the private methods in the calling order
+## 3. Place the private methods in the calling order
 
 It is much easier to navigate between private methods if they are placed in the order they are called by public methods.
 
@@ -40,7 +40,7 @@ Don't
 
 Do
 
-## 3. Do not use prefixes for the class fields
+## 4. Do not use prefixes for the class fields
 
 Prefixes do not add any value. They introduce unnecessary verbosity and therefore should be avoided.
 
@@ -48,19 +48,27 @@ Don't
 
 Do
 
-## 4. Create a separate class if the parameter count is more than three
+## 5. Create a separate class if the parameter count is more than three
+
+Again, the quote by Uncle Bob:
+
+> The ideal number of arguments for a function is zero (niladic). Next comes one (monadic), followed closely by two (dyadic). Three arguments (triadic) should be avoided where possible. More than three (polyadic) requires very special justification — and then shouldn’t be used anyway.
+
+In my opinion, the three parameters are still fine.
 
 Don't
 
 Do
 
-## 5. Split long lines of code into multiple lines
+## 6. Split long lines of code into multiple lines
+
+Do not make the lines
 
 Don't
 
 Do
 
-## 6. Create small classes focused on a single task
+## 7. Create small classes focused on a single task
 
 Comply with the Single Responsibility Principle (SRP). Create small classes usually means not exceeding 100 lines of code.
 
@@ -68,7 +76,7 @@ Don't
 
 Do
 
-## 7. Prefer to extract the code into separate files instead of using regions
+## 8. Prefer to extract the code into separate files instead of using regions
 
 Although regions can be a decent way to separate different code blocks in the single file, more often it is an indication that the file contains too much code and should be extracted into separate files.
 
@@ -76,7 +84,7 @@ Don't
 
 Do
 
-## 8. Choose appropriate names
+## 9. Choose appropriate names
 
 Choose the names for the classes, properties, variables that are easy to understand and describe its intent. Don't be shy to use long names to better express your intention.
 
@@ -87,3 +95,5 @@ Do
 ## Conclusion
 
 I know that many of these suggestions might sound obvious, but I often see the same mistakes made in the code that I review, therefore I decided to share them with you.
+
+Many tools such as [FxCop](https://docs.microsoft.com/en-us/visualstudio/code-quality/install-fxcop-analyzers?view=vs-2019), [SonarLint](https://www.sonarlint.org/), or [ReSharper](https://www.jetbrains.com/resharper/) provide the functionality that will clean-up the code and provide the suggestions as you type. I have used them all, and I strongly recommend starting using these or similar tools to avoid simple mistakes, and also to save the time of other developers who are going to review your code.
