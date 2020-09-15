@@ -62,7 +62,7 @@ Do
 
 ## 6. Split long lines of code into multiple lines
 
-Do not make the lines
+Try to avoid writing the lines of code that exceed 100 symbols.
 
 Don't
 
