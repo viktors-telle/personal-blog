@@ -32,7 +32,7 @@ Don't
 
 Do
 
-## Do not use prefixes for the class fields 
+## Do not use prefixes for the class fields
 
 Prefixes do not add any value. They introduce unnecessary verbosity and therefore should be avoided.
 
@@ -40,9 +40,7 @@ Don't
 
 Do
 
-# Create a separate class if the parameter count is more than three
-
-
+## Create a separate class if the parameter count is more than three
 
 Don't
 
