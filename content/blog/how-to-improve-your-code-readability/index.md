@@ -23,17 +23,51 @@ We spend more time reading others or our code than writing it. Here is the quote
 
 These are strong words and clearly indicate that we should pay much more attention to writing a well-readable code. I will share nine suggestions that will make your code much more appealing and easy to read.
 
-
-
 ## 1. Place each parameter on the separate line
 
-Class constructor and method parameters should be placed on a separate line.
+Class constructor and method parameters should be placed on a separate line. This rule usually makes sense when you have more than two parameters.
+
+Don't
+
+```csharp
+public class Person
+{
+  public Person(string name, string middleName, string lastName, int age)
+  {
+  }
+}
+```
+
+Do
+
+```csharp
+public class Person
+{
+  public Person(string name, 
+                string middleName, 
+                string lastName, 
+                int age
+               )
+  {
+  }
+}
+```
+
+Placing each parameter on a separate line improves the readability of the code. Each parameter stands out as well as you don't have to horizontally scroll to see them.
+
+## 2. Create a separate class if the parameter count is more than three
+
+Again, the quote by Uncle Bob:
+
+> The ideal number of arguments for a function is zero (niladic). Next comes one (monadic), followed closely by two (dyadic). Three arguments (triadic) should be avoided where possible. More than three (polyadic) requires very special justification — and then shouldn’t be used anyway.
+
+In my opinion, the three parameters are still fine.
 
 Don't
 
 Do
 
-## 2. Place public methods on the top of the class
+## 3. Place public methods on the top of the class
 
 Public methods of the class are the ones used by other classes, therefore should be located at the beginning of the class to avoid scrolling and navigating back and forth.
 
@@ -41,7 +75,7 @@ Don't
 
 Do
 
-## 3. Place the private methods in the calling order
+## 4. Place the private methods in the calling order
 
 It is much easier to navigate between private methods if they are placed in the order they are called by public methods.
 
@@ -49,21 +83,9 @@ Don't
 
 Do
 
-## 4. Do not use prefixes for the class fields
+## 5. Do not use prefixes for the class fields
 
 Prefixes do not add any value. They introduce unnecessary verbosity and therefore should be avoided.
-
-Don't
-
-Do
-
-## 5. Create a separate class if the parameter count is more than three
-
-Again, the quote by Uncle Bob:
-
-> The ideal number of arguments for a function is zero (niladic). Next comes one (monadic), followed closely by two (dyadic). Three arguments (triadic) should be avoided where possible. More than three (polyadic) requires very special justification — and then shouldn’t be used anyway.
-
-In my opinion, the three parameters are still fine.
 
 Don't
 
@@ -87,7 +109,7 @@ Do
 
 ## 8. Prefer to extract the code into separate files instead of using regions
 
-Although regions can be a decent way to separate different code blocks in the single file, more often it is an indication that the file contains too much code and should be extracted into separate files.
+Although regions can be a decent way to separate different code blocks in a single file, more often it is an indication that the file contains too much code and should be extracted into separate files.
 
 Don't
 
