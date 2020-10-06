@@ -53,7 +53,7 @@ public class Person
 }
 ```
 
-Placing each parameter on a separate line improves the readability of the code. Each parameter stands out as well as you don't have to horizontally scroll to see them.
+Placing each parameter on a separate line improves the readability of the code. Each parameter stands out as well as you don't have to horizontally scroll to see them. This comes down to the next suggestion.
 
 ## 2. Create a separate class if the parameter count is more than three
 
@@ -61,7 +61,7 @@ Again, the quote by Uncle Bob:
 
 > The ideal number of arguments for a function is zero (niladic). Next comes one (monadic), followed closely by two (dyadic). Three arguments (triadic) should be avoided where possible. More than three (polyadic) requires very special justification — and then shouldn’t be used anyway.
 
-In my opinion, the three parameters are still fine.
+In my opinion, the three parameters are fine.
 
 Don't
 
@@ -77,7 +77,7 @@ Do
 
 ## 4. Place the private methods in the calling order
 
-It is much easier to navigate between private methods if they are placed in the order they are called by public methods.
+It is much easier to navigate between private methods if they are placed in the order they are called by public methods. Many times I see that private methods are randomly placed inside the class. It makes navigating between the methods harder because you are constantly jumping up or down as you read the code.
 
 Don't
 
