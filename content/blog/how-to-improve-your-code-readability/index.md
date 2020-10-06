@@ -93,7 +93,7 @@ Do
 
 ## 6. Split long lines of code into multiple lines
 
-Try to avoid writing the lines of code that exceed 100 symbols.
+Try to avoid writing the lines of code that exceed 100 symbols. It makes code harder to read because you need to use horizontal scrolling.
 
 Don't
 
