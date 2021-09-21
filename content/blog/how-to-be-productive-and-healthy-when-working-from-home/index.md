@@ -59,3 +59,7 @@ Here are the key takeaways from my article:
 * Do one task at a time and eliminate distractions such as social networks.
 * Do not forget about your hobbies and allocate some time for them.
 * Do not work non-stop. Find time to rest. Go outside for a walk, grab a coffee, or lay down.
+
+### Additional Resources
+
+<https://www.toptal.com/remote/staying-healthy-while-working-remotely>
