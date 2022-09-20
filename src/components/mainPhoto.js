@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 const MainPhoto = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(name: { eq: "Viktors and Emma" }, extension: { eq: "jpg" }) {
+      file(name: { eq: "Viktors" }, extension: { eq: "jpg" }) {
         childImageSharp {
           fluid(quality: 100, webpQuality: 100) {
             ...GatsbyImageSharpFluid_withWebp_noBase64
@@ -20,7 +20,7 @@ const MainPhoto = () => {
       fluid={data.file.childImageSharp.fluid}
       fadeIn={false}
       loading="eager"
-      alt="Viktors and his daughter."
+      alt="Viktors"
       style={{
         borderRadius: `100%`,
         display: `block`,
@@ -30,7 +30,7 @@ const MainPhoto = () => {
       }}
       imgStyle={{
         borderRadius: `50%`,
-        objectPosition: `top`,
+        objectPosition: `50% 50%`,
       }}
     />
   )
