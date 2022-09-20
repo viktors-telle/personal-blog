@@ -32,7 +32,7 @@ const IndexPage = (props) => {
         father of the two beautiful kids.
       </p>
       <p>
-        Currently, I am entitled as a senior software developer in a large enterprise
+        Currently, I work as a senior software developer in a large enterprise
         company. Before that, I worked at a variety of companies ranging from
         small startups to midsize companies. My focus is primarily on developing
         applications using .NET Core and SPA frameworks like React and Angular.
