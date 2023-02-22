@@ -51,6 +51,10 @@ const IndexPage = (props) => {
         listening to various podcasts.
       </p>
       <p>
+        I recently started an e-commerce business with my partner. You can check out our store that sells children's toys here:
+        <Link to="https://imaginationstationkids.com/">Imagination Station</Link>
+      </p>
+      <p>
         If you want to reach me, please send me a message via
         <Link to="/contact/"> contact form. </Link>I can advise on the
         development best practices, how to improve legacy code base, how to
