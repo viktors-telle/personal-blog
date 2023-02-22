@@ -28,8 +28,8 @@ const IndexPage = (props) => {
       <h1 style={{ marginTop: `2.5rem` }}>Welcome to my site!</h1>
       <p>
         My name is Viktors Telle, and I am a software developer from Latvia.
-        I've been working in the industry for more than 14 years. I am a
-        father of the two beautiful kids.
+        I've been working in the industry for more than 14 years. I am a father
+        of the two beautiful kids.
       </p>
       <p>
         Currently, I work as a senior software developer in a large enterprise
@@ -51,8 +51,11 @@ const IndexPage = (props) => {
         listening to various podcasts.
       </p>
       <p>
-        I recently started an e-commerce business with my partner. You can check out our store that sells children's toys here:
-        <Link to="https://imaginationstationkids.com/">Imagination Station</Link>
+        I recently started an e-commerce business with my partner. You can check
+        out our store that sells children's toys here:
+        <Link to="https://imaginationstationkids.com/" target="_blank">
+          Imagination Station
+        </Link>
       </p>
       <p>
         If you want to reach me, please send me a message via
