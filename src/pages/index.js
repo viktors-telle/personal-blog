@@ -54,6 +54,7 @@ const IndexPage = (props) => {
         I recently started an e-commerce business with my partner. You can check
         out our store that sells children's toys here:
         <Link to="https://imaginationstationkids.com/" target="_blank">
+          {" "}
           Imagination Station
         </Link>
       </p>
