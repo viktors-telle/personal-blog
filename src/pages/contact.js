@@ -14,9 +14,9 @@ const Contact = ({ data, location }) => {
         className="email-form"
         name="contact"
         method="POST"
+        action="/thank-you"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
-        action="/thank-you"
       >
         <input className="input-teal" type="hidden" name="bot-field" />
         <input type="hidden" name="form-name" value="contact" />
@@ -28,7 +28,7 @@ const Contact = ({ data, location }) => {
         </p>
         <p>
           <label>
-            Your Email
+            Your Email{" "}
             <input className="input-teal" type="email" name="email" required />
           </label>
         </p>

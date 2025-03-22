@@ -35,9 +35,9 @@ const Footer = () => {
         return (
           <FooterWrapper>
             <SocialLink
-              domain="twitter.com"
+              domain="x.com"
               userName={social.twitter}
-              name="Twitter"
+              name="X"
             />{" "}
             |{" "}
             <SocialLink
@@ -63,7 +63,7 @@ const Footer = () => {
                 marginTop: `1rem`,
               }}
             >
-              <small>© 2020 - Viktors Telle. All rights reserved.</small>
+              <small>© 2025 - Viktors Telle. All rights reserved.</small>
             </p>
           </FooterWrapper>
         )

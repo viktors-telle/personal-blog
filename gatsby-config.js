@@ -11,7 +11,7 @@ module.exports = {
   siteMetadata: {
     title: `Viktors Telle`,
     author: `Viktors Telle`,
-    description: `My name is Viktors Telle, and I am a software developer from Latvia. I work in the industry for more than 12 years. I am a husband and father of the two beautiful kids. I am a family man, and since the Covid-19 outbreak started, I work from home, and together with my wife, take care of our kids.`,
+    description: `My name is Viktors Telle and with over 16 years of industry experience, I deliver high-quality software solutions built on solid engineering principles.`,
     siteUrl,
     social: {
       twitter: `ViktorsTelle`,
@@ -35,7 +35,8 @@ module.exports = {
     ],
   },
   plugins: [
-    `gatsby-plugin-netlify-cms`,
+    `gatsby-plugin-decap-cms`,
+    'gatsby-plugin-image',
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
