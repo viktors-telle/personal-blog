@@ -224,14 +224,6 @@ module.exports = {
           },
         },
       },
-    },
-    {
-      resolve: "gatsby-plugin-mailchimp",
-      options: {
-        endpoint:
-          "https://viktorstelle.us17.list-manage.com/subscribe/post?u=3cbc846dbc5d9cc54a2d286db&amp;id=699e61a498",
-        timeout: 3500,
-      },
-    },
+    }
   ],
 }

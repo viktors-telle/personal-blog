@@ -1,6 +1,8 @@
 import React, { useState } from "react"
-import addToMailchimp from "gatsby-plugin-mailchimp"
 import { useToasts } from "react-toast-notifications"
+
+const MAILCHIMP_URL =
+  "https://viktorstelle.us17.list-manage.com/subscribe/post?u=3cbc846dbc5d9cc54a2d286db&amp;id=699e61a498"
 
 const EmailList = () => {
   const { addToast } = useToasts()
@@ -8,16 +10,26 @@ const EmailList = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    const response = await addToMailchimp(email)
 
-    if (response.result === "error") {
-      if (response.msg.includes("is already subscribed")) {
-        addToast("You are already subscribed!", { appearance: "warning" })
+    const url = `${MAILCHIMP_URL}&EMAIL=${encodeURIComponent(email)}`
+
+    try {
+      const response = await fetch(url, {
+        method: "GET",
+        mode: "no-cors",
+      })
+
+      if (response.ok || response.type === "opaque") {
+        addToast("Subscription successful! Please check your inbox.", {
+          appearance: "success",
+        })
+        setEmail("")
       } else {
-        addToast(response.msg, { appearance: "error" })
+        addToast("Something went wrong. Please try again.", { appearance: "error" })
       }
-    } else {
-      addToast(response.msg, { appearance: "success" })
+    } catch (error) {
+      addToast("An error occurred. Please try again later.", { appearance: "error" })
+      console.error("Mailchimp Error:", error)
     }
   }
 
