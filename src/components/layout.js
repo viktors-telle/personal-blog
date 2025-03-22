@@ -1,13 +1,12 @@
 import React from "react"
 import Footer from "./footer"
-
-import { rhythm } from "../utils/typography"
 import Header from "./header"
-import { ToastProvider } from "react-toast-notifications"
+import { rhythm } from "../utils/typography"
+import { Toaster } from "react-hot-toast"
 
 const Layout = ({ children }) => {
   return (
-    <ToastProvider autoDismiss="true">
+    <>
       <Header />
       <div
         style={{
@@ -20,7 +19,8 @@ const Layout = ({ children }) => {
         <main>{children}</main>
       </div>
       <Footer />
-    </ToastProvider>
+      <Toaster position="top-center" reverseOrder={false} />
+    </>
   )
 }
 
