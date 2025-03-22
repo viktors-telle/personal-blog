@@ -8,8 +8,6 @@ const MainPhoto = () => {
       file(name: { eq: "Profile1" }, extension: { eq: "jpg" }) {
         childImageSharp {
           gatsbyImageData(
-            width: 200
-            height: 200
             placeholder: NONE
             aspectRatio: 1
             formats: [AUTO, WEBP, AVIF]
