@@ -26,44 +26,30 @@ const IndexPage = (props) => {
       />
       <MainPhoto />
       <h1 style={{ marginTop: `2.5rem` }}>Welcome to my site!</h1>
+      <h3>Expert Software Development & Technical Leadership</h3>
       <p>
-        My name is Viktors Telle, and I am a software developer from Latvia.
-        I've been working in the industry for more than 14 years. I am a father
-        of the two beautiful kids.
+        With over 16 years of industry experience, I deliver high-quality software solutions built on solid engineering principles. As the founder of my own software development company based in Latvia, I partner with businesses to create robust, maintainable applications that solve real problems.
       </p>
+      <h3>Technical Expertise</h3>
       <p>
-        Currently, I work as a senior software developer in a large enterprise
-        company. Before that, I worked at a variety of companies ranging from
-        small startups to midsize companies. My focus is primarily on developing
-        applications using .NET Core and SPA frameworks like React and Angular.
-        I have experience in creating up CI/CD pipelines in TeamCity, Octopus
-        Deploy, and Azure DevOps. I also have experience in coaching and
-        mentoring other developers for the last five years. I am a big fan of
-        clean code, best practices, and quality software.
+        My core competency lies in .NET Core development, complemented by extensive experience implementing CI/CD pipelines using TeamCity, Octopus Deploy, and Azure DevOps. I'm committed to clean code architecture, industry best practices, and quality-driven development methodologies.
       </p>
+      <h3>Leadership & Mentorship</h3>
       <p>
-        I write a <Link to="/blog/">blog</Link> where I share my work experience
-        and try to help people to learn from my mistakes. It is known for a fact
-        that the fastest and the best way to learn is to learn from someone
-        else's mistakes and experiences. I also share the best practices in
-        software development. Besides writing and spending time with my kids, I
-        also study the finances and entrepreneurship by reading books and
-        listening to various podcasts.
+        For the past five years, I've coached and mentored developers, helping teams level up their technical capabilities and engineering practices. I believe in sustainable development processes that balance innovation with maintainability.
       </p>
+      <h3>Beyond Coding</h3>
       <p>
-        I recently started an e-commerce business with my partner. You can check
-        out our store that sells children's toys here:
-        <Link to="https://luminatoys.com/" target="_blank">
-          {" "}
-          Lumina Toys
-        </Link>
+        When I'm not building software or spending time with my family, I invest in continuous learning through finance and entrepreneurship studies. This multidisciplinary approach informs my technical work and business decisions.
+        I recently launched <Link to="https://adsnap.eu/" target="_blank">{" "}AdSnap</Link>, an ads listing platform that showcases my practical approach to business and technology.
       </p>
+      <h3>My Blog</h3>
       <p>
-        If you want to reach me, please send me a message via
-        <Link to="/contact/"> contact form. </Link>I can advise on the
-        development best practices, how to improve legacy code base, how to
-        automate your build and deployment pipeline, or other software
-        development topics.
+        Through my <Link to="/blog/">blog</Link>, I share insights from my professional journey - both successes and failures - to help other developers avoid common pitfalls. I firmly believe that learning from others' experiences accelerates professional growth.
+      </p>
+      <h3>Let's Connect</h3>
+      <p>
+        Have questions about development best practices, legacy code improvement, CI/CD automation, or other software engineering challenges? Reach out through my <Link to="/contact/">contact form</Link> for a consultation.
       </p>
     </Layout>
   )

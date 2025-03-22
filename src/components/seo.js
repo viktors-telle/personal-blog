@@ -1,9 +1,16 @@
-import React from "react"
-import PropTypes from "prop-types"
-import Helmet from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import React from "react";
+import PropTypes from "prop-types";
+import { Helmet } from "react-helmet";
+import { useStaticQuery, graphql } from "gatsby";
 
-const SEO = ({ canonical, description, lang, meta, keywords, title }) => {
+const SEO = ({
+               description = "",
+               meta = [],
+               keywords = [],
+               title,
+               canonical = "",
+               lang = "en",
+             }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -12,23 +19,24 @@ const SEO = ({ canonical, description, lang, meta, keywords, title }) => {
             title
             description
             author
+            siteUrl
           }
         }
       }
     `
-  )
+  );
 
-  const metaDescription = description || site.siteMetadata.description
+  const metaDescription = description || site.siteMetadata.description;
 
   return (
     <Helmet
-      htmlAttributes={{
-        lang,
-      }}
+      htmlAttributes={{ lang }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       link={
-        canonical ? [{ rel: "canonical", key: canonical, href: canonical }] : []
+        canonical
+          ? [{ rel: "canonical", key: canonical, href: canonical }]
+          : []
       }
       meta={[
         {
@@ -48,42 +56,31 @@ const SEO = ({ canonical, description, lang, meta, keywords, title }) => {
           content: `website`,
         },
         {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
+          property: `og:locale`,
+          content: lang,
         },
         {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name: `twitter:title`,
+          content: title,
+        },
+        keywords.length > 0
+          ? {
+            name: `keywords`,
+            content: keywords.join(`, `),
+          }
+          : {},
       ]
-        .concat(
-          keywords.length > 0
-            ? {
-                name: `keywords`,
-                content: keywords.join(`, `),
-              }
-            : []
-        )
+        .filter(Boolean)
         .concat(meta)}
     >
       <link
         rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
-      />
-
-      <link
-        rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
       />
-
       <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
@@ -91,39 +88,32 @@ const SEO = ({ canonical, description, lang, meta, keywords, title }) => {
       <link
         rel="apple-touch-icon"
         sizes="180x180"
-        href="/apple-touch-icon.png"
+        href="/favicon/apple-touch-icon.png"
       />
       <link
         rel="icon"
         type="image/png"
         sizes="32x32"
-        href="/favicon-32x32.png"
+        href="/favicon/favicon-32x32.png"
       />
       <link
         rel="icon"
         type="image/png"
         sizes="16x16"
-        href="/favicon-16x16.png"
+        href="/favicon/favicon-16x16.png"
       />
+      {/* additional links and tags if needed */}
     </Helmet>
-  )
-}
-
-SEO.defaultProps = {
-  lang: `en`,
-  meta: [],
-  keywords: [],
-  description: ``,
-  canonical: ``,
-}
+  );
+};
 
 SEO.propTypes = {
-  canonical: PropTypes.string,
-  description: PropTypes.string,
   lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  keywords: PropTypes.arrayOf(PropTypes.string),
+  meta: PropTypes.array,
+  keywords: PropTypes.array,
+  description: PropTypes.string,
+  canonical: PropTypes.string,
   title: PropTypes.string.isRequired,
-}
+};
 
-export default SEO
+export default SEO;

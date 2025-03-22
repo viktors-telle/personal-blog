@@ -1,4 +1,4 @@
 // custom typefaces
-import "typeface-montserrat"
-import "typeface-merriweather"
+import "@fontsource/montserrat";
+import "@fontsource/merriweather";
 import "./src/styles/global.css"

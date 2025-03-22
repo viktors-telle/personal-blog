@@ -12,9 +12,12 @@ const Blog = ({ data, location }) => {
   const posts = data.allMarkdownRemark.edges
 
   const disqusConfig = ({ slug, title }) => ({
-    shortname: process.env.GATSBY_DISQUS_NAME,
-    config: { identifier: slug, title },
-  })
+    shortname: process.env.GATSBY_DISQUS_NAME || "viktorstelle",
+    config: {
+      identifier: slug,
+      title: title,
+    },
+  });
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -45,8 +48,8 @@ const Blog = ({ data, location }) => {
                 <Link to={`/blog${node.fields.slug}#disqus_thread`}>
                   <CommentCount
                     {...disqusConfig({
-                      slug: node.frontmatter.title,
-                      title: siteTitle,
+                      slug: node.fields.slug,
+                      title: node.frontmatter.title,
                     })}
                   ></CommentCount>
                 </Link>

@@ -1,38 +1,33 @@
 import React from "react"
 import styled from "styled-components"
-import Img from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { Link, useStaticQuery, graphql } from "gatsby"
 
 const LogoWrap = styled.div`
-  margin: auto 0;
-  flex: 0 1 50px;
-  box-shadow: none;
+    margin: auto 0;
+    flex: 0 1 50px;
+    box-shadow: none;
 
-  @media (max-width: 768px) and (orientation: landscape) {
-    flex: 0 1 25px;
-  }
+    @media (max-width: 768px) and (orientation: landscape) {
+        flex: 0 1 25px;
+    }
 `
 const Logo = () => {
   const data = useStaticQuery(graphql`
     query {
       file(name: { eq: "android-chrome-192x192" }, extension: { eq: "png" }) {
         childImageSharp {
-          fluid(maxWidth: 50, quality: 100, webpQuality: 100) {
-            ...GatsbyImageSharpFluid_withWebp_noBase64
-          }
+          gatsbyImageData(width: 50, placeholder: NONE, layout: FIXED)
         }
       }
     }
-  `)
+  `);
+
+  const image = getImage(data.file);
 
   return (
     <LogoWrap as={Link} to="/">
-      <Img
-        fadeIn={false}
-        loading="eager"
-        fluid={data.file.childImageSharp.fluid}
-        alt="logo"
-      />
+      <GatsbyImage image={image} alt="Logo" loading="eager" />
     </LogoWrap>
   )
 }

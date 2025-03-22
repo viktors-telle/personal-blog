@@ -1,39 +1,45 @@
-import React from "react"
-import Image from "gatsby-image"
-import { useStaticQuery, graphql } from "gatsby"
+import React from "react";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { useStaticQuery, graphql } from "gatsby";
 
 const MainPhoto = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(name: { eq: "Viktors" }, extension: { eq: "jpg" }) {
+      file(name: { eq: "Profile1" }, extension: { eq: "jpg" }) {
         childImageSharp {
-          fluid(quality: 100, webpQuality: 100) {
-            ...GatsbyImageSharpFluid_withWebp_noBase64
-          }
+          gatsbyImageData(
+            placeholder: NONE
+            aspectRatio: 1
+            formats: [AUTO, WEBP, AVIF]
+            layout: FIXED
+            quality: 100
+            transformOptions: { cropFocus: CENTER }
+          )
         }
       }
     }
-  `)
+  `);
+
+  const image = getImage(data.file);
 
   return (
-    <Image
-      fluid={data.file.childImageSharp.fluid}
-      fadeIn={false}
-      loading="eager"
+    <GatsbyImage
+      image={image}
       alt="Viktors"
+      loading="eager"
       style={{
-        borderRadius: `100%`,
-        display: `block`,
-        margin: `0 auto 0 auto`,
-        maxWidth: `200px`,
-        maxHeight: `200px`,
+        borderRadius: "100%",
+        display: "block",
+        margin: "0 auto",
+        maxWidth: "200px",
+        maxHeight: "200px",
       }}
       imgStyle={{
-        borderRadius: `50%`,
-        objectPosition: `50% 50%`,
+        borderRadius: "50%",
+        objectPosition: "50% 50%",
       }}
     />
-  )
-}
+  );
+};
 
-export default MainPhoto
+export default MainPhoto;
