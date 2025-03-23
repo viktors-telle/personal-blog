@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import toast, { Toaster } from "react-hot-toast"
 
-const MAILCHIMP_URL = process.env.MAILCHIMP_URL
+const MAILCHIMP_URL = process.env.GATSBY_MAILCHIMP_URL
 
 const EmailList = () => {
   const [email, setEmail] = useState("")
