@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from "gatsby";
 const MainPhoto = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(name: { eq: "Profile1" }, extension: { eq: "jpg" }) {
+      file(name: { eq: "Profile1" }, extension: { eq: "jpeg" }) {
         childImageSharp {
           gatsbyImageData(
             placeholder: NONE
