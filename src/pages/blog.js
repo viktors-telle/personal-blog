@@ -12,7 +12,7 @@ const Blog = ({ data, location }) => {
   const posts = data.allMarkdownRemark.edges
 
   const disqusConfig = ({ slug, title }) => ({
-    shortname: process.env.GATSBY_DISQUS_NAME || "viktorstelle",
+    shortname: process.env.GATSBY_DISQUS_NAME,
     config: {
       identifier: slug,
       title: title,
