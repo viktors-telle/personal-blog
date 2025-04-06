@@ -36,12 +36,18 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-decap-cms`,
-    'gatsby-plugin-image',
+    "gatsby-plugin-image",
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: `/sitemap.xml`,
+        createLinkInHead: true,
+      },
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -92,7 +98,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-react-helmet-canonical-urls`,
       options: {
-        siteUrl: `https://viktorstelle.com`,
+        siteUrl,
       },
     },
     {
@@ -116,8 +122,8 @@ module.exports = {
               return allMarkdownRemark.edges.map((edge) => {
                 const url =
                   site.siteMetadata.siteUrl + "/blog" + edge.node.fields.slug
-                return Object.assign({}, edge.node.frontmatter, {
-                  title: edge.node.frontmatter.title,
+                return {
+                  ...edge.node.frontmatter, title: edge.node.frontmatter.title,
                   description: edge.node.frontmatter.description,
                   date: edge.node.frontmatter.date,
                   url: url,
@@ -125,14 +131,14 @@ module.exports = {
                   custom_elements: [
                     {
                       "content:encoded": edge.node.html.replace(
-                        /(?<=\"|\s)\/static\//g,
-                        `${site.siteMetadata.siteUrl}\/static\/`
+                        /(?<="|\s)\/static\//g,
+                        `${site.siteMetadata.siteUrl}\\/static\\/`,
                       ),
                     },
                     { tags: edge.node.frontmatter.keywords.join(", ") },
                     { "dc:creator": "Viktors Telle" },
                   ],
-                })
+                }
               })
             },
             query: `
@@ -207,7 +213,6 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        resolveEnv: () => NETLIFY_ENV,
         env: {
           production: {
             policy: [{ userAgent: "*", disallow: ["/admin"] }],
@@ -224,6 +229,6 @@ module.exports = {
           },
         },
       },
-    }
+    },
   ],
 }
