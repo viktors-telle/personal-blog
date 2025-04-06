@@ -36,12 +36,17 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-decap-cms`,
-    'gatsby-plugin-image',
+    "gatsby-plugin-image",
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: `/sitemap.xml`,
+      },
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -126,7 +131,7 @@ module.exports = {
                     {
                       "content:encoded": edge.node.html.replace(
                         /(?<=\"|\s)\/static\//g,
-                        `${site.siteMetadata.siteUrl}\/static\/`
+                        `${site.siteMetadata.siteUrl}\/static\/`,
                       ),
                     },
                     { tags: edge.node.frontmatter.keywords.join(", ") },
@@ -224,6 +229,6 @@ module.exports = {
           },
         },
       },
-    }
+    },
   ],
 }
