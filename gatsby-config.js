@@ -45,6 +45,7 @@ module.exports = {
       resolve: `gatsby-plugin-sitemap`,
       options: {
         output: `/sitemap.xml`,
+        createLinkInHead: true,
       },
     },
     {
@@ -97,7 +98,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-react-helmet-canonical-urls`,
       options: {
-        siteUrl: `https://viktorstelle.com`,
+        siteUrl,
       },
     },
     {
