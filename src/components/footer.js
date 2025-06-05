@@ -25,6 +25,7 @@ const Footer = () => {
                 linkedIn
                 medium
                 github
+                adsnap
               }
             }
           }
@@ -56,6 +57,12 @@ const Footer = () => {
               domain="github.com"
               userName={social.github}
               name="GitHub"
+            />{" "}
+            |{" "}
+            <SocialLink
+              domain="adsnap.eu"
+              userName={social.adsnap}
+              name="AdSnap"
             />
             <p
               style={{

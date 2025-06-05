@@ -18,6 +18,7 @@ module.exports = {
       linkedIn: `viktors-telle`,
       medium: `@viktors.telle`,
       github: `viktors-telle`,
+      adsnap: ``
     },
     menuLinks: [
       {
