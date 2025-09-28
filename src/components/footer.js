@@ -60,7 +60,7 @@ const Footer = () => {
             />{" "}
             |{" "}
             <SocialLink
-              domain="adsnap.eu"
+              domain="adsnap.lv/en"
               userName={social.adsnap}
               name="AdSnap"
             />
