@@ -26,6 +26,7 @@ const Footer = () => {
                 medium
                 github
                 adsnap
+                iscompliant
               }
             }
           }
@@ -63,6 +64,12 @@ const Footer = () => {
               domain="adsnap.lv/en"
               userName={social.adsnap}
               name="AdSnap"
+            />{" "}
+            |{" "}
+            <SocialLink
+              domain="iscompliant.app"
+              userName={social.iscompliant}
+              name="Listing Compliance Shield"
             />
             <p
               style={{
