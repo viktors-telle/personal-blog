@@ -11,14 +11,15 @@ module.exports = {
   siteMetadata: {
     title: `Viktors Telle`,
     author: `Viktors Telle`,
-    description: `My name is Viktors Telle and with over 16 years of industry experience, I deliver high-quality software solutions built on solid engineering principles.`,
+    description: `Viktors Telle - Senior Backend Engineer & System Architect with 17+ years of experience in C#, .NET, SQL Server, and Azure. Available for B2B contract work through SIA TelleNet Solutions.`,
     siteUrl,
     social: {
       twitter: `ViktorsTelle`,
       linkedIn: `viktors-telle`,
       medium: `@viktors.telle`,
       github: `viktors-telle`,
-      adsnap: ``
+      adsnap: ``,
+      iscompliant: ``
     },
     menuLinks: [
       {
@@ -45,7 +46,6 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        output: `/sitemap.xml`,
         createLinkInHead: true,
       },
     },
@@ -217,6 +217,8 @@ module.exports = {
         env: {
           production: {
             policy: [{ userAgent: "*", disallow: ["/admin"] }],
+            sitemap: "https://www.viktorstelle.com/sitemap-index.xml",
+            host: "https://www.viktorstelle.com",
           },
           "branch-deploy": {
             policy: [{ userAgent: "*", disallow: ["/"] }],
